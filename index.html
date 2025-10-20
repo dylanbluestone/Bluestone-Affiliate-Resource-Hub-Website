@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestone Affiliate Resource Hub</title>
+    <style>
+        /* ============================================
+           GLOBAL STYLES & RESET
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Brand Colors - Inspired by Bluestone */
+            --primary-blue: #4A7BA7;
+            --primary-blue-dark: #3A6287;
+            --accent-teal: #5C9EAD;
+            --soft-cream: #F9F7F4;
+            --warm-white: #FFFFFF;
+            --text-dark: #2C3E50;
+            --text-medium: #5A6C7D;
+            --text-light: #8B9BAA;
+            --border-light: #E5E9ED;
+            --success-green: #6BB589;
+            --shadow: rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--soft-cream);
+            overflow-x: hidden;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .nav-header {
+            background-color: var(--warm-white);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-teal) 100%);
+            color: var(--warm-white);
+            padding: 8rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* ============================================
+           CTA CARDS
+           ============================================ */
+        .cta-section {
+            max-width: 1200px;
+            margin: -4rem auto 6rem;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .cta-card {
+            background: var(--warm-white);
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 8px 24px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .cta-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+            border-color: var(--primary-blue);
+        }
+
+        .cta-card-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, var(--primary-blue), var(--accent-teal));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .cta-card h2 {
+            font-size: 1.75rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-card p {
+            color: var(--text-medium);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary-blue);
+            color: var(--warm-white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn:hover {
+            background: var(--primary-blue-dark);
+            border-color: var(--primary-blue-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(74, 123, 167, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: var(--warm-white);
+        }
+
+        /* ============================================
+           HIGHLIGHTS SECTION
+           ============================================ */
+        .highlights {
+            max-width: 1200px;
+            margin: 6rem auto;
+            padding: 0 2rem;
+        }
+
+        .highlights-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .highlights-header h2 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .highlights-header p {
+            font-size: 1.15rem;
+            color: var(--text-medium);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .highlights-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .highlight-item {
+            background: var(--warm-white);
+            padding: 2.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px var(--shadow);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .highlight-item:hover {
+            transform: translateY(-4px);
+        }
+
+        .highlight-icon {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-item h3 {
+            font-size: 1.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .highlight-item p {
+            color: var(--text-medium);
+            line-height: 1.6;
+        }
+
+        .commission-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--success-green), #5AA875);
+            color: var(--warm-white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-top: 1rem;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--text-dark);
+            color: var(--warm-white);
+            padding: 4rem 2rem 2rem;
+            margin-top: 6rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-light);
+            line-height: 1.8;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--warm-white);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--warm-white);
+        }
+
+        .copyright {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-section {
+                margin-top: -3rem;
+                gap: 1.5rem;
+            }
+
+            .cta-card {
+                padding: 2rem;
+            }
+
+            .highlights-header h2 {
+                font-size: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 5rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .cta-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav-header">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Bluestone</a>
+            <div class="nav-links">
+                <a href="#highlights">Program Benefits</a>
+                <a href="#support">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Welcome to the Bluestone Affiliate Resource Hub</h1>
+            <p>Your complete toolkit for promoting mental health support that changes lives. Access everything you need to succeed as a Bluestone affiliate, tailored to your unique audience and marketing approach.</p>
+        </div>
+    </section>
+
+    <!-- CTA CARDS -->
+    <section class="cta-section">
+        <!-- Card for Affiliates WITH Following -->
+        <div class="cta-card">
+            <div class="cta-card-icon">📱</div>
+            <h2>Have a Following?</h2>
+            <p>Social media influencers, content creators, and community builders: find all the resources you need to authentically share Bluestone with your audience.</p>
+            <a href="influencers.html" class="btn">Access Influencer Resources</a>
+        </div>
+
+        <!-- Card for Affiliate Marketers -->
+        <div class="cta-card">
+            <div class="cta-card-icon">💼</div>
+            <h2>Affiliate Marketer?</h2>
+            <p>Professional marketers using paid ads, email campaigns, and content marketing: get proven templates, ad copy, and conversion-focused assets.</p>
+            <a href="marketers.html" class="btn">Access Marketer Resources</a>
+        </div>
+    </section>
+
+    <!-- PROGRAM HIGHLIGHTS -->
+    <section class="highlights" id="highlights">
+        <div class="highlights-header">
+            <h2>Why Partner With Bluestone?</h2>
+            <p>Join a mission-driven affiliate program that rewards you for making mental health support accessible.</p>
+        </div>
+
+        <div class="highlights-grid">
+            <div class="highlight-item">
+                <div class="highlight-icon">💰</div>
+                <h3>Generous Commission</h3>
+                <div class="commission-badge">30% Lifetime Recurring</div>
+                <p>Earn ongoing commission for every subscriber you refer, as long as they remain a customer. Your impact continues to pay dividends.</p>
+            </div>
+
+            <div class="highlight-item">
+                <div class="highlight-icon">🤝</div>
+                <h3>Dedicated Support</h3>
+                <p>Our affiliate team is here to help you succeed. Get personalized guidance, custom resources, and quick answers to all your questions.</p>
+            </div>
+
+            <div class="highlight-item">
+                <div class="highlight-icon">🎯</div>
+                <h3>Proven Resources</h3>
+                <p>Access professionally designed content, tested messaging, and conversion-optimized assets that make promotion easy and effective.</p>
+            </div>
+
+            <div class="highlight-item">
+                <div class="highlight-icon">💙</div>
+                <h3>Mission-Driven Impact</h3>
+                <p>Promote a product that genuinely helps people. Bluestone provides accessible, AI-powered mental health support that changes lives.</p>
+            </div>
+
+            <div class="highlight-item">
+                <div class="highlight-icon">📊</div>
+                <h3>Real-Time Tracking</h3>
+                <p>Monitor your performance with detailed analytics via Rewardful. Track clicks, conversions, and earnings with complete transparency.</p>
+            </div>
+
+            <div class="highlight-item">
+                <div class="highlight-icon">⚡</div>
+                <h3>Quick Payouts</h3>
+                <p>Receive your commissions promptly with our reliable payment system. Focus on promotion while we handle the logistics.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="support">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-section">
+                    <h3>Affiliate Support</h3>
+                    <p>Have questions about the program, need custom resources, or want partnership guidance?</p>
+                    <p><strong>Email:</strong> <a href="mailto:affiliates@usebluestone.com">affiliates@usebluestone.com</a></p>
+                    <p>Our team typically responds within 24 hours.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="influencers.html">Influencer Resources</a>
+                        <a href="marketers.html">Marketer Resources</a>
+                        <a href="https://usebluestone.com" target="_blank">Bluestone Website</a>
+                        <a href="https://rewardful.com" target="_blank">Rewardful Dashboard</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About Bluestone</h3>
+                    <p>Bluestone is an AI-powered mental health chatbot that provides accessible, affordable, and confidential support to people who need it most.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Affiliate Agreement</a>
+                    <a href="#">FTC Compliance Guidelines</a>
+                </div>
+                <p class="copyright">&copy; 2025 Bluestone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
