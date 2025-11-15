@@ -1,0 +1,1944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources for Affiliates with a Following | Bluestone</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================
+           GLOBAL STYLES & RESET
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Bluestone Wellness Brand Colors */
+            --primary-blue: #2563EB;
+            --primary-blue-dark: #1E40AF;
+            --secondary-blue: #3B82F6;
+            --accent-green: #1DB954;
+            --near-black: #1a1a1a;
+            --dark-surface: #1E293B;
+            --dark-surface-elevated: #334155;
+            --soft-cream: #F9F7F4;
+            --warm-white: #FFFFFF;
+            --text-dark: #1a1a1a;
+            --text-medium: #374151;
+            --text-light: #6B7280;
+            --border-light: #E5E7EB;
+            --success-green: #10B981;
+            --shadow: rgba(0, 0, 0, 0.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #f5f5f5;
+            font-weight: 400;
+        }
+
+        /* ============================================
+           TYPOGRAPHY - INTER FONT
+           ============================================ */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1 {
+            font-weight: 800;
+        }
+
+        h2, h3 {
+            font-weight: 700;
+        }
+
+        h4, h5 {
+            font-weight: 600;
+        }
+
+        h6 {
+            font-weight: 600;
+        }
+
+        p {
+            font-weight: 400;
+        }
+
+        button, .btn, .nav-links a {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .nav-header {
+            background-color: var(--warm-white);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .btn-switch {
+            background: var(--primary-blue);
+            color: var(--warm-white);
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-switch:hover {
+            background: var(--primary-blue-dark);
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           PAGE HEADER
+           ============================================ */
+        .page-header {
+            background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%);
+            color: #FFFFFF;
+            padding: 5rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .page-header-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+            color: #FFFFFF;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            line-height: 1.8;
+            color: #FFFFFF;
+        }
+
+        /* ============================================
+           SECTION NAVIGATION
+           ============================================ */
+        .section-nav {
+            background: var(--warm-white);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px var(--shadow);
+            position: sticky;
+            top: 80px;
+            z-index: 999;
+        }
+
+        .section-nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .section-nav a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .section-nav a:hover {
+            background: var(--soft-cream);
+            color: var(--primary-blue);
+        }
+
+        /* ============================================
+           CONTENT SECTIONS
+           ============================================ */
+        .content-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .content-section:nth-child(even) {
+            background: var(--warm-white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-number {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: var(--warm-white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 40px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.15rem;
+            color: var(--text-medium);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            background: var(--warm-white);
+            padding: 3rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .content-section:nth-child(even) .content-block {
+            background: var(--soft-cream);
+        }
+
+        .content-block h3 {
+            font-size: 1.75rem;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .content-block h4 {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        .placeholder-text {
+            color: var(--text-medium);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        /* Media Placeholders */
+        .media-placeholder {
+            background: var(--border-light);
+            border: 3px dashed var(--text-light);
+            border-radius: 12px;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .media-placeholder-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .media-placeholder-text {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .media-placeholder-subtext {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Resource Grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .resource-card {
+            background: linear-gradient(135deg, var(--soft-cream), var(--warm-white));
+            padding: 2rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .content-section:nth-child(even) .resource-card {
+            background: linear-gradient(135deg, var(--warm-white), var(--soft-cream));
+        }
+
+        .resource-card:hover {
+            border-color: var(--primary-blue);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px var(--shadow);
+        }
+
+        .resource-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .resource-card h5 {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .resource-card p {
+            color: var(--text-medium);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary-blue);
+            color: var(--warm-white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background: var(--primary-blue-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(74, 123, 167, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: var(--warm-white);
+        }
+
+        .btn-small {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        /* Lists */
+        .styled-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .styled-list li {
+            padding: 1rem 0 1rem 2.5rem;
+            position: relative;
+            color: var(--text-medium);
+            line-height: 1.8;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .styled-list li:last-child {
+            border-bottom: none;
+        }
+
+        .styled-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-green);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* Platform Icons */
+        .platform-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .platform-item {
+            text-align: center;
+            padding: 2rem;
+            background: var(--soft-cream);
+            border-radius: 10px;
+            border: 2px solid var(--border-light);
+        }
+
+        .content-section:nth-child(even) .platform-item {
+            background: var(--warm-white);
+        }
+
+        .platform-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .platform-item h4 {
+            margin: 1rem 0;
+            color: var(--text-dark);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--text-dark);
+            color: var(--warm-white);
+            padding: 4rem 2rem 2rem;
+            margin-top: 0;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-light);
+            line-height: 1.8;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--warm-white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--warm-white);
+        }
+
+        .copyright {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.25rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .content-block {
+                padding: 2rem;
+            }
+
+            .section-nav {
+                top: 70px;
+            }
+
+            .section-nav-content {
+                gap: 0.75rem;
+            }
+
+            .media-placeholder {
+                padding: 3rem 1.5rem;
+                min-height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header {
+                padding: 4rem 1.5rem 2rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.85rem;
+            }
+
+            .content-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .resource-grid,
+            .platform-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav-header">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Bluestone</a>
+            <div class="nav-links">
+                <a href="index.html">← Back to Home</a>
+                <a href="marketers.html" class="btn-switch">Switch to Marketer Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="page-header-content">
+            <h1>Resources for Influencers</h1>
+            <p>Everything you need to authentically share Bluestone Wellness with your community. Social media templates, content guidelines, and creative assets to help you promote AI-powered holistic wellness.</p>
+        </div>
+    </header>
+
+    <!-- SECTION NAVIGATION -->
+    <nav class="section-nav">
+        <div class="section-nav-content">
+            <a href="#getting-started">Getting Started</a>
+            <a href="#social-media">Social Media Content</a>
+            <a href="#guidelines">Content Guidelines</a>
+            <a href="#visual-assets">Visual Assets</a>
+            <a href="#best-practices">Best Practices</a>
+            <a href="#support">Support & Community</a>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         SECTION 1: GETTING STARTED
+         ============================================ -->
+    <section id="getting-started" class="content-section">
+        <div class="section-header">
+            <span class="section-number">1</span>
+            <h2>Getting Started</h2>
+            <p>Welcome! Here's everything you need to know to begin your journey as a Bluestone affiliate influencer.</p>
+        </div>
+
+        <!-- INTRO CONTENT BLOCK -->
+        <div class="content-block">
+            <h3>Welcome, Influencer! Let's Get You Started</h3>
+
+            <p class="placeholder-text">
+                As a Bluestone affiliate influencer, you're partnering with a mission-driven company that puts people first. Bluestone Wellness isn't just another app—it's a holistic AI companion that learns each user's unique needs and adapts to help them thrive.
+            </p>
+            <p class="placeholder-text">
+                Your audience trusts your recommendations. With Bluestone, you can promote a product that genuinely improves lives while earning 30% lifetime recurring commissions. Every subscriber you refer earns you ongoing revenue for as long as they stay subscribed.
+            </p>
+
+            <h4>What You'll Find in This Resource Hub</h4>
+            <ul class="styled-list">
+                <li>Social media templates for Instagram, TikTok, YouTube, and Twitter/X</li>
+                <li>Platform-specific caption examples, video scripts, and hashtag strategies</li>
+                <li>Content guidelines and mental health messaging ethics</li>
+                <li>FTC disclosure requirements and compliance templates</li>
+                <li>Brand assets (logos, colors, and creative guidelines)</li>
+                <li>Best practices for engagement and conversion optimization</li>
+                <li>Direct support from our affiliate team (Dylan@usebluestone.com)</li>
+            </ul>
+
+            <!-- PLACEHOLDER: Add welcome video here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🎥</div>
+                <div class="media-placeholder-text">Add Welcome Video Here</div>
+                <div class="media-placeholder-subtext">Embed YouTube/Vimeo video or upload video file</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="btn-group">
+                <a href="mailto:Dylan@usebluestone.com" class="btn">📄 Quick Start Guide (Coming Soon)</a>
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary">📋 Setup Checklist (Coming Soon)</a>
+            </div>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">These resources are currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+        </div>
+
+        <!-- QUICK SETUP GUIDE -->
+        <div class="content-block">
+            <h3>Get Started in 5 Steps</h3>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">1️⃣</div>
+                    <h5>Sign Up for Rewardful</h5>
+                    <p>Create your affiliate account on Rewardful to get your unique tracking link. This link tracks all your referrals and commissions.</p>
+                    <a href="https://www.rewardful.com/" target="_blank" class="btn btn-small">Join Rewardful</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">2️⃣</div>
+                    <h5>Get Your Referral Link</h5>
+                    <p>Once registered, grab your unique affiliate link from your Rewardful dashboard. Use this link in all your content (bio, posts, videos).</p>
+                    <a href="https://www.rewardful.com/" target="_blank" class="btn btn-small">Access Dashboard</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">3️⃣</div>
+                    <h5>Download Brand Assets</h5>
+                    <p>Get the Bluestone logo, brand colors, and usage guidelines. Currently available: logo PNG files. More assets coming soon!</p>
+                    <a href="mailto:Dylan@usebluestone.com" class="btn btn-small">Request Assets</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">4️⃣</div>
+                    <h5>Create Your First Post</h5>
+                    <p>Use our social media templates below to create authentic content about Bluestone. Remember to include FTC disclosure!</p>
+                    <a href="#social-media" class="btn btn-small">Browse Templates</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">5️⃣</div>
+                    <h5>Track Your Performance</h5>
+                    <p>Monitor clicks, conversions, and earnings in your Rewardful dashboard. See what content performs best and optimize.</p>
+                    <a href="https://www.rewardful.com/" target="_blank" class="btn btn-small">View Analytics</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">✉️</div>
+                    <h5>Get Support Anytime</h5>
+                    <p>Questions or need custom assets? Email Dylan@usebluestone.com for help. Response time: 24-48 hours.</p>
+                    <a href="mailto:Dylan@usebluestone.com" class="btn btn-small">Contact Support</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- WHY PROMOTE BLUESTONE -->
+        <div class="content-block">
+            <h3>Why Promote Bluestone?</h3>
+
+            <p class="placeholder-text">
+                Your audience trusts your recommendations. Here are the key talking points that make Bluestone an easy sell and a product you can feel good about promoting:
+            </p>
+
+            <h4>Talking Points for Your Audience:</h4>
+            <ul class="styled-list">
+                <li><strong>"An AI wellness companion that actually learns YOU - not another generic app"</strong><br>Emphasize the personality learning system that makes Bluestone unique. It's not one-size-fits-all.</li>
+                <li><strong>"12 different AI personalities - find the one that matches your vibe"</strong><br>Highlight the choice and customization. From supportive to direct, empathetic to motivational - there's a personality for everyone.</li>
+                <li><strong>"Combines sleep tracking, mental health support, fitness, nutrition, and meditation in ONE app"</strong><br>No more juggling multiple apps. Bluestone is the all-in-one holistic wellness solution.</li>
+                <li><strong>"Free tier available - your audience can try it risk-free"</strong><br>This removes friction. People can test it with zero commitment, no credit card required.</li>
+                <li><strong>"Voice-enabled conversations - talk to your AI like a real wellness coach"</strong><br>Not just text chat. Users can have natural voice conversations, making it feel more personal and accessible.</li>
+                <li><strong>"Privacy-focused and human-centered - serves users, not corporations"</strong><br>Bluestone's philosophy: "Most AI tools serve corporate interests. Bluestone serves YOU." This resonates with privacy-conscious audiences.</li>
+                <li><strong>"Available on iOS, Android, and Web - works on any device"</strong><br>Cross-platform accessibility means your audience can use it wherever they are, on whatever device they prefer.</li>
+                <li><strong>"Context-aware AI that remembers your conversations"</strong><br>Not just isolated chats - Bluestone remembers your history and provides continuity in your wellness journey.</li>
+                <li><strong>"AI that learns YOU, thinks like YOU, acts like YOU"</strong><br>Core philosophy: "Bridge technology to humanity." This is AI that adapts to your personality, not the other way around.</li>
+            </ul>
+
+            <div class="alert-box alert-box-success">
+                <h4>💙 Why This Works</h4>
+                <p>These talking points focus on what makes Bluestone different, not just another wellness app. Lead with the unique features (12 personalities, AI learning, holistic approach) and always mention the free tier to reduce signup friction.</p>
+            </div>
+        </div>
+
+        <!-- ADDITIONAL RESOURCES -->
+        <div class="content-block">
+            <h3>Additional Getting Started Resources</h3>
+
+            <!-- PLACEHOLDER: Add tutorial video here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📹</div>
+                <div class="media-placeholder-text">Add Tutorial Video Here</div>
+                <div class="media-placeholder-subtext">Complete walkthrough of affiliate dashboard and resources</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Downloadable Resources</h4>
+            <!-- PLACEHOLDER: Add your downloadable resources here -->
+            <p class="placeholder-text">Access essential guides and templates to help you promote Bluestone effectively. Contact Dylan@usebluestone.com for access:</p>
+
+            <div class="btn-group">
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary btn-small">📄 Affiliate Agreement (Coming Soon)</a>
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary btn-small">📋 Brand Guidelines (Coming Soon)</a>
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary btn-small">📅 Content Calendar Template (Coming Soon)</a>
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary btn-small">🔗 Tracking Link Setup Guide (Coming Soon)</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2: SOCIAL MEDIA CONTENT
+         ============================================ -->
+    <section id="social-media" class="content-section">
+        <div class="section-header">
+            <span class="section-number">2</span>
+            <h2>Social Media Content</h2>
+            <p>Platform-specific templates, caption examples, and content strategies for Instagram, TikTok, YouTube, and Twitter/X.</p>
+        </div>
+
+        <!-- INSTAGRAM RESOURCES -->
+        <div class="content-block">
+            <h3>📸 Instagram Content</h3>
+
+            <p class="placeholder-text">
+                Instagram is perfect for sharing visual stories about your wellness journey. Use carousel posts for tutorials, Reels for quick demos, and Stories for daily updates. Here are proven templates for promoting Bluestone Wellness to your Instagram community.
+            </p>
+
+            <h4>Instagram Post Templates</h4>
+            <!-- PLACEHOLDER: Add image examples here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🖼️</div>
+                <div class="media-placeholder-text">Add Instagram Post Examples Here</div>
+                <div class="media-placeholder-subtext">Carousel of example Instagram posts (3-5 images)</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Caption Templates & Examples</h4>
+
+            <p class="placeholder-text"><strong>Post Idea 1: Personal Story</strong></p>
+            <div class="code-box">
+"I've been using @bluestonewellness for [X weeks/months] and it's honestly changed how I approach my mental health and wellness. 🧠✨
+
+Unlike other apps that feel robotic, Bluestone's AI actually learns MY personality and adapts to what I need. Some days I need tough love, other days I need gentle encouragement - and it knows the difference.
+
+The best part? It combines sleep tracking, mental health check-ins, fitness plans, and meditation all in one place. No more juggling 5 different apps.
+
+They have a free tier so you can try it risk-free. Link in bio! 💙
+
+#BluestoneWellness #MentalHealthMatters #AIforGood #WellnessJourney #SelfCare #MentalHealthSupport #HolisticWellness
+
+⚠️ This post contains affiliate links. I earn a commission if you sign up."
+            </div>
+
+            <p class="placeholder-text"><strong>Post Idea 2: Feature Highlight</strong></p>
+            <div class="code-box">
+"Can we talk about how cool this is? 🤯
+
+@bluestonewellness has 12 different AI personalities you can choose from. Need a supportive cheerleader? There's one. Want brutally honest motivation? There's one for that too.
+
+And the AI actually LEARNS you over time. It remembers your goals, your struggles, your preferences. It's like having a wellness coach in your pocket.
+
+Trying the free version first to see if you vibe with it. Link in bio if you want to check it out! 💙
+
+#AIWellness #MentalHealthTech #PersonalizedWellness #SelfCareSunday #ad"
+            </div>
+
+            <p class="placeholder-text"><strong>Post Idea 3: Before/After Results</strong></p>
+            <div class="code-box">
+"Real talk: My sleep score was a 4/10 when I started using @bluestonewellness. 😴
+
+Now? Consistently 8-9/10 because the AI gave me personalized sleep recommendations that ACTUALLY work for my lifestyle.
+
+It tracked my patterns, noticed I was drinking coffee too late, and suggested better wind-down routines. Game changer.
+
+Free to start - link in bio! 💙
+
+#SleepBetter #WellnessApp #AIforGood #HealthyHabits #affiliate"
+            </div>
+
+            <p class="placeholder-text"><strong>Hashtag Strategy:</strong></p>
+            <ul class="styled-list">
+                <li>Primary: #BluestoneWellness #AIWellness</li>
+                <li>Mental Health: #MentalHealthMatters #MentalHealthSupport #MentalHealthAwareness</li>
+                <li>Wellness: #HolisticWellness #WellnessJourney #SelfCare #SelfCareSunday</li>
+                <li>Tech: #AIforGood #HealthTech #WellnessTech</li>
+                <li>Lifestyle: #HealthyLifestyle #WellnessWarrior #MindBodySoul</li>
+            </ul>
+
+            <h4>Instagram Stories Resources</h4>
+            <!-- PLACEHOLDER: Add Stories templates here -->
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary">📱 Instagram Stories Templates (Coming Soon)</a>
+                <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">Ready-to-use story templates and stickers are currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Hashtag Recommendations</h4>
+            <!-- PLACEHOLDER: Add hashtag lists here -->
+            <p class="placeholder-text">
+                Use these curated hashtag sets to maximize reach. Mix high-volume and niche hashtags for best results:
+            </p>
+            <a href="mailto:Dylan@usebluestone.com" class="btn-secondary btn-small">📋 Hashtag Library (Coming Soon)</a>
+        </div>
+
+        <!-- TIKTOK RESOURCES -->
+        <div class="content-block">
+            <h3>🎵 TikTok Content</h3>
+
+            <p class="placeholder-text">
+                TikTok's authentic, conversational format is perfect for wellness content. Short-form videos showing the app in action perform best. Keep it real, show the interface, and emphasize the AI personality features that make Bluestone unique.
+            </p>
+
+            <h4>TikTok Video Ideas & Scripts</h4>
+
+            <p class="placeholder-text"><strong>Video Idea 1: "POV: Your AI wellness coach actually gets you"</strong></p>
+            <div class="code-box">
+Script:
+[Text on screen: "POV: You finally found a wellness app that learns YOUR personality"]
+
+[Show app interface with different AI personalities]
+
+"Okay so Bluestone has 12 different AI personalities and I'm obsessed.
+
+Some days I need the 'supportive bestie' energy, other days I need the 'drill sergeant' telling me to get my life together.
+
+[Show voice conversation feature]
+
+And you can TALK to it - like actually have a conversation. It remembers everything we've talked about.
+
+[Show sleep, fitness, mental health tabs]
+
+Plus it does sleep tracking, mental health check-ins, workout plans, nutrition - literally everything.
+
+There's a free version so like... why not try it? Link in bio 💙
+
+#BluestoneWellness #MentalHealthTok #WellnessApp #AIWellness #SelfCare #ad"
+            </div>
+
+            <p class="placeholder-text"><strong>Video Idea 2: "Apps I Use for Mental Health"</strong></p>
+            <div class="code-box">
+Script:
+[Text: "Apps that actually help my mental health"]
+
+1. Bluestone Wellness - My AI wellness companion that learns me
+2. [Another app you actually use]
+3. [Another app you actually use]
+
+"The first one is new for me but I'm genuinely impressed. The AI has different personalities and it LEARNS your preferences over time.
+
+It's not just mental health - it also tracks sleep, fitness, nutrition. Super holistic approach.
+
+Free tier available, link in bio! 💙
+
+#MentalHealthApps #WellnessTok #AIWellness #affiliate"
+            </div>
+
+            <p class="placeholder-text"><strong>Video Idea 3: Tutorial/Demo</strong></p>
+            <div class="code-box">
+Script:
+[Text: "Let me show you this AI wellness app that's actually cool"]
+
+[Record phone screen]
+
+"So this is Bluestone Wellness. First thing you do is choose your AI personality - I went with 'Empathetic Counselor'
+
+[Show conversation]
+
+Then you can talk to it about ANYTHING - mental health, sleep issues, fitness goals
+
+[Show it generating meal plan]
+
+It can create personalized meal plans, workout routines, even custom meditations
+
+[Show sleep tracking]
+
+And it tracks your sleep and gives you insights
+
+The AI learns you over time so it gets better at helping you. Pretty sick honestly.
+
+Free version in the link in my bio if you want to try! 💙"
+            </div>
+
+            <h4>TikTok Best Practices</h4>
+            <ul class="styled-list">
+                <li>Keep videos between 15-60 seconds for maximum engagement</li>
+                <li>Use trending sounds while staying authentic to mental health messaging</li>
+                <li>Include captions for accessibility and silent viewing</li>
+                <li>Post during peak hours (typically 7-9 AM and 7-11 PM EST)</li>
+                <li>Engage with comments within the first hour of posting</li>
+            </ul>
+        </div>
+
+        <!-- YOUTUBE RESOURCES -->
+        <div class="content-block">
+            <h3>▶️ YouTube Content</h3>
+
+            <p class="placeholder-text">
+                YouTube is perfect for in-depth reviews, tutorials, and long-form wellness content. Create 10-20 minute videos showing Bluestone's features in detail, your personal experience, and honest comparisons with other wellness apps.
+            </p>
+
+            <h4>Video Content Ideas</h4>
+            <!-- PLACEHOLDER: Add video ideas here -->
+            <div style="text-align: center; margin: 2rem 0;">
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary">📺 YouTube Thumbnail Templates (Coming Soon)</a>
+                <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">Sample videos, thumbnail templates, and description templates are currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Video Title Ideas</h4>
+            <ul class="styled-list">
+                <li>"I Tried an AI Wellness Coach for 30 Days - Here's What Happened"</li>
+                <li>"This AI App Actually Improved My Mental Health (Bluestone Wellness Review)"</li>
+                <li>"12 AI Personalities? Testing Bluestone Wellness App"</li>
+                <li>"The Future of Mental Health? AI Wellness Companion Review"</li>
+                <li>"Bluestone vs Calm - Which Wellness App is Better?"</li>
+            </ul>
+
+            <h4>Description Template</h4>
+            <div class="code-box">
+In this video, I'm reviewing Bluestone Wellness - an AI-powered holistic wellness app that combines mental health support, sleep tracking, fitness planning, and nutrition guidance.
+
+What makes it unique:
+✅ 12 different AI personalities to choose from
+✅ AI learns your personality and preferences over time
+✅ Voice-enabled conversations
+✅ Holistic approach (sleep + mental health + fitness + nutrition)
+✅ Free tier available
+
+Try Bluestone Wellness (Affiliate Link): [YOUR LINK]
+
+Timestamps:
+0:00 - Intro
+1:30 - What is Bluestone Wellness?
+3:45 - Setting up & choosing AI personality
+6:20 - Mental health features
+9:10 - Sleep tracking & insights
+11:30 - Fitness & nutrition features
+14:00 - My honest thoughts
+16:20 - Who should use this?
+
+💙 Use my link above to try it free!
+
+#BluestoneWellness #AIWellness #MentalHealthApp
+
+---
+⚠️ DISCLAIMER: This video contains affiliate links. If you sign up through my link, I may earn a commission at no extra cost to you. I only promote products I genuinely believe in.
+            </div>
+        </div>
+
+        <!-- TWITTER/X RESOURCES -->
+        <div class="content-block">
+            <h3>𝕏 Twitter/X Content</h3>
+
+            <!-- PLACEHOLDER: Add Twitter overview here -->
+            <p class="placeholder-text">
+                Twitter/X is perfect for sharing quick tips, mental health facts, and engaging in meaningful conversations. Use short, punchy posts with your affiliate link.
+            </p>
+
+            <h4>Tweet Templates & Thread Ideas</h4>
+
+            <p class="placeholder-text"><strong>Single Tweet Examples:</strong></p>
+
+            <div class="code-box">
+<strong>Tweet 1: Product Highlight</strong>
+"I've been testing @bluestonewellness and the AI personality feature is wild 🤯
+
+12 different coaching styles - pick the vibe you need today. Some days I need tough love, other days I need gentle support.
+
+Free tier to try it out. [link] 💙
+
+#BluestoneWellness #AIWellness #ad"
+            </div>
+
+            <div class="code-box">
+<strong>Tweet 2: Problem/Solution</strong>
+"Tired of wellness apps that feel generic?
+
+@bluestonewellness actually LEARNS you. The AI adapts to YOUR personality and preferences over time.
+
+Sleep tracking + mental health + fitness + nutrition = all in one app
+
+Try free: [link] #affiliate"
+            </div>
+
+            <div class="code-box">
+<strong>Tweet 3: Quick Tip</strong>
+"PSA: If you're using 5 different apps for wellness tracking, check out @bluestonewellness
+
+Combines everything: sleep, mental health, fitness, nutrition, meditation
+
+One app. One login. Actually personalized AI.
+
+Free to start: [link] 💙 #ad"
+            </div>
+
+            <p class="placeholder-text"><strong>Thread Template (5-7 tweets):</strong></p>
+
+            <div class="code-box">
+<strong>Thread: "Why I'm Recommending Bluestone Wellness"</strong>
+
+1/ Let's talk about AI wellness apps. I've tried most of them, and @bluestonewellness stands out. Here's why 🧵
+
+2/ First: 12 AI personalities. You can literally choose the coaching style that fits YOU. Need a drill sergeant? Got it. Need gentle encouragement? Yep. This actually matters.
+
+3/ Second: It learns you over time. Not just generic advice - the AI remembers your goals, struggles, and preferences. Feels more like talking to someone who knows you.
+
+4/ Third: Holistic approach. Sleep tracking + mental health + fitness plans + nutrition guidance + meditation. No more juggling multiple apps.
+
+5/ Fourth: Voice-enabled. You can talk to it naturally. Way more personal than just typing.
+
+6/ Fifth: Free tier available. Try it risk-free. No credit card required.
+
+7/ Full disclosure: This is an affiliate link - I earn a commission if you sign up. But I genuinely use it and think it's worth checking out.
+
+Link: [your affiliate link] 💙
+
+#BluestoneWellness #MentalHealthTwitter #WellnessJourney
+            </div>
+
+            <p class="placeholder-text"><strong>Best Practices for Twitter/X:</strong></p>
+            <ul class="styled-list">
+                <li>Tweet during peak hours: 8-10 AM, 12-1 PM, 5-6 PM (your timezone)</li>
+                <li>Use threads for storytelling or detailed explanations</li>
+                <li>Always include disclosure (#ad or "affiliate link")</li>
+                <li>Tag @bluestonewellness when appropriate</li>
+                <li>Engage with replies authentically</li>
+                <li>Mix promotional content with value-add content (80/20 rule)</li>
+            </ul>
+
+            <h4>Engagement Tips for Twitter/X</h4>
+            <ul class="styled-list">
+                <li>Keep tweets concise and impactful (under 280 characters)</li>
+                <li>Use threads for longer-form mental health discussions</li>
+                <li>Include relevant hashtags (#MentalHealth, #SelfCare, etc.)</li>
+                <li>Engage authentically with your community's responses</li>
+                <li>Share personal experiences when appropriate and comfortable</li>
+            </ul>
+        </div>
+
+        <!-- GENERAL SOCIAL MEDIA TIPS -->
+        <div class="content-block">
+            <h3>Universal Social Media Tips</h3>
+
+            <!-- PLACEHOLDER: Add general tips here -->
+            <p class="placeholder-text">
+                These best practices apply across all social platforms for maximum engagement and conversions:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">🎯</div>
+                    <h5>Authenticity First</h5>
+                    <p>Share your genuine experience with Bluestone. Authenticity builds trust and drives better conversion rates.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⏰</div>
+                    <h5>Consistent Posting</h5>
+                    <p>Regular content keeps your audience engaged. Use our content calendar template to plan ahead.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h5>Engage Your Audience</h5>
+                    <p>Respond to comments and messages. Build community around mental health support.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <h5>Track Your Results</h5>
+                    <p>Monitor which content performs best. Use Rewardful analytics to optimize your strategy.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: CONTENT CREATION GUIDELINES
+         ============================================ -->
+    <section id="guidelines" class="content-section">
+        <div class="section-header">
+            <span class="section-number">3</span>
+            <h2>Content Creation Guidelines</h2>
+            <p>Learn how to communicate the Bluestone brand voice, follow ethical mental health messaging, and create content that converts.</p>
+        </div>
+
+        <!-- BRAND VOICE -->
+        <div class="content-block">
+            <h3>Brand Voice & Messaging</h3>
+
+            <!-- PLACEHOLDER: Add brand voice description here -->
+            <p class="placeholder-text">
+                The Bluestone brand voice is warm, professional, accessible, and hopeful. Match this tone in all your content to maintain brand consistency.
+            </p>
+
+            <h4>Our Brand Personality</h4>
+            <ul class="styled-list">
+                <li><strong>Compassionate:</strong> We approach mental health with empathy and understanding</li>
+                <li><strong>Professional:</strong> We're credible and trustworthy, backed by mental health expertise</li>
+                <li><strong>Accessible:</strong> We make mental health support available to everyone</li>
+                <li><strong>Hopeful:</strong> We believe in the possibility of positive change and growth</li>
+                <li><strong>Non-judgmental:</strong> We create a safe space for all mental health experiences</li>
+            </ul>
+
+            <!-- PLACEHOLDER: Add brand voice examples here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">💬</div>
+                <div class="media-placeholder-text">Add Brand Voice Examples Here</div>
+                <div class="media-placeholder-subtext">Side-by-side comparisons of on-brand vs off-brand messaging</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="btn-group">
+                <a href="mailto:Dylan@usebluestone.com" class="btn">📄 Brand Voice Guide (Coming Soon)</a>
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary">💬 Messaging Examples (Coming Soon)</a>
+            </div>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">These resources are currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+        </div>
+
+        <!-- DO'S AND DON'TS -->
+        <div class="content-block">
+            <h3>Content Do's and Don'ts</h3>
+
+            <p class="placeholder-text">
+                Follow these guidelines to create effective, ethical content about wellness and Bluestone. These rules protect both you and your audience, and ensure you stay compliant with regulations.
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">✅</div>
+                    <h5>DO: Share Genuine Experience</h5>
+                    <p>Be authentic about your experience. Highlight the 12 AI personalities, free tier, and holistic approach.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">❌</div>
+                    <h5>DON'T: Make Medical Claims</h5>
+                    <p>NEVER claim Bluestone "cures depression" or "treats anxiety." It provides support, not medical treatment.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">✅</div>
+                    <h5>DO: Emphasize Free Tier</h5>
+                    <p>Mention the free tier availability so people can try risk-free. This removes friction and increases signups.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">❌</div>
+                    <h5>DON'T: Use Fear-Based Marketing</h5>
+                    <p>Avoid dramatic or triggering language about mental health. Keep messaging supportive and hopeful.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">✅</div>
+                    <h5>DO: Include FTC Disclosure</h5>
+                    <p>REQUIRED: Always disclose your affiliate relationship (#ad, #affiliate, or clear statement).</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">❌</div>
+                    <h5>DON'T: Promise Specific Results</h5>
+                    <p>Never guarantee outcomes. Say "may help" or "supports" instead of "will cure" or "fixes."</p>
+                </div>
+            </div>
+
+            <!-- PLACEHOLDER: Add detailed guidelines here -->
+            <h4>Complete Guidelines Document</h4>
+            <p class="placeholder-text">
+                For a comprehensive list of content guidelines and brand voice examples, download our complete resource guide:
+            </p>
+            <a href="mailto:Dylan@usebluestone.com" class="btn">📄 Complete Guidelines (Coming Soon)</a>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+        </div>
+
+        <!-- ETHICAL MESSAGING -->
+        <div class="content-block">
+            <h3>Mental Health Messaging Ethics</h3>
+
+            <div class="alert-box">
+                <h4>⚠️ CRITICAL: Mental Health is Serious</h4>
+                <p>When discussing mental health, we have a responsibility to be ethical and accurate. Always position Bluestone as a supportive tool, NOT a replacement for professional medical care.</p>
+            </div>
+
+            <h4>Key Ethical Principles</h4>
+            <ul class="styled-list">
+                <li><strong>Never claim Bluestone replaces therapy</strong> - It's a companion tool, not a substitute for professional care</li>
+                <li><strong>Use person-first language</strong> - "person with depression" not "depressed person"</li>
+                <li><strong>Avoid romanticizing mental illness</strong> - Don't make it seem aesthetic or trendy</li>
+                <li><strong>Include crisis resources when needed</strong> - If discussing serious topics, provide hotline numbers</li>
+                <li><strong>Be authentic about your journey</strong> - Share real experiences, not fabricated stories</li>
+                <li><strong>Acknowledge individual differences</strong> - Results vary by person, don't over-promise</li>
+                <li><strong>Encourage professional help</strong> - Always recommend therapy/doctors for serious concerns</li>
+            </ul>
+
+            <h4>Crisis Resources to Include</h4>
+            <div class="code-box">
+If you or someone you know is in crisis:
+• 988 - Suicide Prevention Lifeline
+• 911 - Emergency Services
+• 741741 - Crisis Text Line
+• 1-800-799-7233 - Domestic Violence Hotline
+• 1-800-662-4357 - SAMHSA Helpline
+            </div>
+
+            <!-- PLACEHOLDER: Add video tutorial here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🎓</div>
+                <div class="media-placeholder-text">Add Ethical Messaging Tutorial Video Here</div>
+                <div class="media-placeholder-subtext">Training video on responsible mental health communication</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+        </div>
+
+        <!-- FTC COMPLIANCE -->
+        <div class="content-block">
+            <h3>FTC Disclosure Requirements</h3>
+
+            <div class="alert-box">
+                <h4>🚨 LEGALLY REQUIRED</h4>
+                <p>Affiliate disclosure is NOT optional - it's required by law (FTC regulations). Failure to disclose can result in fines and legal action. Always err on the side of over-disclosure.</p>
+            </div>
+
+            <p class="placeholder-text">
+                You MUST clearly disclose your affiliate relationship with Bluestone in ALL promotional content. Here's how to stay compliant:
+            </p>
+
+            <h4>Required Disclosures by Platform</h4>
+            <ul class="styled-list">
+                <li><strong>Instagram Posts:</strong> Include "#ad" or "#affiliate" in the FIRST LINE of your caption, before any line breaks</li>
+                <li><strong>Instagram Stories:</strong> Use the "Paid Partnership" tag OR add text disclosure directly on screen</li>
+                <li><strong>TikTok:</strong> Enable "Paid Partnership" toggle AND include "#ad" in caption or video text</li>
+                <li><strong>YouTube:</strong> Check "Includes paid promotion" box AND verbally disclose in video AND mention in description</li>
+                <li><strong>Twitter/X:</strong> Include "#ad" or "affiliate link" within the tweet itself, NOT just in profile</li>
+            </ul>
+
+            <h4>Disclosure Examples</h4>
+            <div class="code-box">
+<strong>Instagram:</strong>
+"#ad #affiliate - This post contains affiliate links. I earn a commission if you sign up."
+
+<strong>TikTok:</strong>
+[Text overlay: "Paid partnership with Bluestone"] or "#ad - affiliate link in bio"
+
+<strong>YouTube:</strong>
+"Quick disclosure: This video contains affiliate links. If you sign up through my link, I may earn a commission at no extra cost to you."
+
+<strong>Twitter/X:</strong>
+"Trying @bluestonewellness (affiliate link - I earn commission) and loving the AI personalities!"
+            </div>
+
+            <h4>Disclosure Examples</h4>
+            <!-- PLACEHOLDER: Add disclosure examples here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📋</div>
+                <div class="media-placeholder-text">Add Disclosure Examples Here</div>
+                <div class="media-placeholder-subtext">Screenshots showing proper FTC disclosures on each platform</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="btn-group">
+                <a href="mailto:Dylan@usebluestone.com" class="btn">📄 FTC Compliance Guide (Coming Soon)</a>
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary">📋 Disclosure Templates (Coming Soon)</a>
+            </div>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">These resources are currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: VISUAL ASSETS
+         ============================================ -->
+    <section id="visual-assets" class="content-section">
+        <div class="section-header">
+            <span class="section-number">4</span>
+            <h2>Visual Assets</h2>
+            <p>Download logos, pre-made graphics, brand colors, and shareable video content to enhance your posts.</p>
+        </div>
+
+        <!-- LOGOS AND BRAND ASSETS -->
+        <div class="content-block">
+            <h3>Logos & Brand Identity</h3>
+
+            <!-- PLACEHOLDER: Add logo files here -->
+            <p class="placeholder-text">
+                Download official Bluestone logos in various formats for use in your content. Contact Dylan@usebluestone.com for brand assets:
+            </p>
+
+            <!-- PLACEHOLDER: Display logos here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🎨</div>
+                <div class="media-placeholder-text">Add Logo Variations Here</div>
+                <div class="media-placeholder-subtext">Display different logo versions (full color, white, black, icon only)</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Available Logo Formats</h4>
+            <div class="btn-group">
+                <a href="#" class="btn-secondary btn-small">Download PNG Files</a>
+                <a href="#" class="btn-secondary btn-small">Download SVG Files</a>
+                <a href="#" class="btn-secondary btn-small">Download All Logos (ZIP)</a>
+            </div>
+
+            <h4>Brand Colors</h4>
+            <!-- PLACEHOLDER: Add color palette here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🎨</div>
+                <div class="media-placeholder-text">Add Brand Color Palette Here</div>
+                <div class="media-placeholder-subtext">Visual display of brand colors with hex codes</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <a href="mailto:Dylan@usebluestone.com" class="btn">📄 Brand Style Guide (Coming Soon)</a>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+        </div>
+
+        <!-- PRE-MADE GRAPHICS -->
+        <div class="content-block">
+            <h3>Pre-Made Graphics & Templates</h3>
+
+            <!-- PLACEHOLDER: Add graphics overview here -->
+            <p class="placeholder-text">
+                Use these ready-to-share graphics and visual assets in your social media content. Contact Dylan@usebluestone.com for access:
+            </p>
+
+            <h4>Social Media Graphics Library</h4>
+            <!-- PLACEHOLDER: Add graphics gallery here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🖼️</div>
+                <div class="media-placeholder-text">Add Graphics Gallery Here</div>
+                <div class="media-placeholder-subtext">Grid display of available social media graphics (12-20 examples)</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📱</div>
+                    <h5>Instagram Graphics</h5>
+                    <p>Square (1080x1080) and story (1080x1920) templates optimized for Instagram.</p>
+                    <a href="#" class="btn btn-small">Download</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎬</div>
+                    <h5>Video Thumbnails</h5>
+                    <p>Eye-catching thumbnail templates for YouTube, TikTok, and video content.</p>
+                    <a href="#" class="btn btn-small">Download</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h5>Quote Graphics</h5>
+                    <p>Inspirational mental health quotes branded with Bluestone identity.</p>
+                    <a href="#" class="btn btn-small">Download</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <h5>Infographics</h5>
+                    <p>Educational mental health statistics and information graphics.</p>
+                    <a href="#" class="btn btn-small">Download</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download All Graphics (ZIP)</a>
+                <a href="#" class="btn-secondary">Access Canva Templates</a>
+            </div>
+        </div>
+
+        <!-- VIDEO CONTENT -->
+        <div class="content-block">
+            <h3>Video Content for Sharing</h3>
+
+            <!-- PLACEHOLDER: Add video library overview here -->
+            <p class="placeholder-text">
+                Access pre-created video content that you can share directly or use as B-roll in your own videos. Coming soon - check back for updates:
+            </p>
+
+            <!-- PLACEHOLDER: Add video library here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🎥</div>
+                <div class="media-placeholder-text">Add Video Library Here</div>
+                <div class="media-placeholder-subtext">Embedded videos or links to Google Drive/Dropbox folder</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Available Video Content</h4>
+            <ul class="styled-list">
+                <li>Product demo videos showing Bluestone features</li>
+                <li>Customer testimonial videos (with permission)</li>
+                <li>Mental health tip videos you can share</li>
+                <li>B-roll footage for use in your own content</li>
+                <li>Animated explainer videos</li>
+            </ul>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Access Video Library (Google Drive)</a>
+                <a href="#" class="btn-secondary">Download Video Pack (ZIP)</a>
+            </div>
+        </div>
+
+        <!-- CUSTOM ASSET REQUESTS -->
+        <div class="content-block">
+            <h3>Need Custom Assets?</h3>
+
+            <!-- PLACEHOLDER: Add custom request info here -->
+            <p class="placeholder-text">
+                Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. If you need custom graphics, videos, or other creative assets tailored to your audience, our team can help:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">🎨</div>
+                    <h5>Custom Graphics</h5>
+                    <p>Request custom social media graphics designed specifically for your brand aesthetic.</p>
+                    <a href="#" class="btn btn-small">Request Graphics</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎬</div>
+                    <h5>Video Collaboration</h5>
+                    <p>Partner with us on video content, interviews, or product demonstrations.</p>
+                    <a href="#" class="btn btn-small">Propose Collaboration</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📝</div>
+                    <h5>Content Review</h5>
+                    <p>Get feedback on your content before posting to ensure brand alignment.</p>
+                    <a href="#" class="btn btn-small">Submit for Review</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: BEST PRACTICES & TIPS
+         ============================================ -->
+    <section id="best-practices" class="content-section">
+        <div class="section-header">
+            <span class="section-number">5</span>
+            <h2>Best Practices & Tips</h2>
+            <p>Learn from successful affiliates, discover engagement strategies, and access proven tactics that drive conversions.</p>
+        </div>
+
+        <!-- SUCCESS STORIES -->
+        <div class="content-block">
+            <h3>Success Stories from Top Affiliates</h3>
+
+            <!-- PLACEHOLDER: Add success stories here -->
+            <p class="placeholder-text">
+                Learn from successful affiliates who are promoting Bluestone and earning great recurring commissions. Success stories will be featured here as our program grows:
+            </p>
+
+            <!-- PLACEHOLDER: Add case study here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">⭐</div>
+                <div class="media-placeholder-text">Add Success Story #1 Here</div>
+                <div class="media-placeholder-subtext">Case study with stats, strategy breakdown, and interview</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <!-- PLACEHOLDER: Add case study here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">⭐</div>
+                <div class="media-placeholder-text">Add Success Story #2 Here</div>
+                <div class="media-placeholder-subtext">Case study with stats, strategy breakdown, and interview</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <!-- PLACEHOLDER: Add case study here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">⭐</div>
+                <div class="media-placeholder-text">Add Success Story #3 Here</div>
+                <div class="media-placeholder-subtext">Case study with stats, strategy breakdown, and interview</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <a href="#" class="btn">Read More Success Stories (Blog)</a>
+        </div>
+
+        <!-- ENGAGEMENT STRATEGIES -->
+        <div class="content-block">
+            <h3>Proven Engagement Strategies</h3>
+
+            <p class="placeholder-text">
+                These tactics have been proven to increase engagement and drive conversions for wellness influencers:
+            </p>
+
+            <h4>Timing & Posting Best Practices:</h4>
+            <ul class="styled-list">
+                <li><strong>Post during peak times:</strong> Evenings (7-9 PM) and weekends for wellness content</li>
+                <li><strong>Use carousel posts</strong> on Instagram for step-by-step tutorials</li>
+                <li><strong>Create "Day in the Life"</strong> content featuring Bluestone naturally</li>
+                <li><strong>Share before/after results:</strong> Sleep scores, mood tracking improvements</li>
+                <li><strong>Respond to comments quickly:</strong> Builds trust and community</li>
+                <li><strong>Educate, don't just sell:</strong> 80% value content, 20% promotional</li>
+            </ul>
+
+            <h4>Proven Engagement Tactics:</h4>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h5>Start Conversations</h5>
+                    <!-- PLACEHOLDER: Add strategy details -->
+                    <p>Ask your audience questions about their mental health journey. Engagement leads to trust, which leads to conversions.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📖</div>
+                    <h5>Share Your Story</h5>
+                    <!-- PLACEHOLDER: Add strategy details -->
+                    <p>Authentic personal experiences resonate deeply. Share how Bluestone has impacted your mental health journey.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎯</div>
+                    <h5>Address Pain Points</h5>
+                    <!-- PLACEHOLDER: Add strategy details -->
+                    <p>Identify common mental health challenges your audience faces and position Bluestone as a helpful solution.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎁</div>
+                    <h5>Offer Value First</h5>
+                    <!-- PLACEHOLDER: Add strategy details -->
+                    <p>Provide mental health tips and resources before promoting. Build trust through consistent value.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📹</div>
+                    <h5>Use Video Content</h5>
+                    <!-- PLACEHOLDER: Add strategy details -->
+                    <p>Video content consistently outperforms static posts. Show Bluestone in action through screen recordings or demos.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⏰</div>
+                    <h5>Consistent Posting</h5>
+                    <!-- PLACEHOLDER: Add strategy details -->
+                    <p>Regular content keeps you top-of-mind. Use our content calendar template to maintain consistency.</p>
+                </div>
+            </div>
+
+            <!-- PLACEHOLDER: Add detailed strategy guide -->
+            <h4>Complete Engagement Playbook</h4>
+            <p class="placeholder-text">
+                For in-depth strategies, conversion tactics, and advanced affiliate techniques, download our comprehensive guide:
+            </p>
+            <a href="mailto:Dylan@usebluestone.com" class="btn btn-secondary">📄 Engagement Playbook (Coming Soon)</a>
+        </div>
+
+        <!-- CONVERSION OPTIMIZATION -->
+        <div class="content-block">
+            <h3>Conversion Optimization Tips</h3>
+
+            <!-- PLACEHOLDER: Add conversion tips here -->
+            <p class="placeholder-text">
+                Maximize your earnings with these conversion-focused tactics for affiliate promotion:
+            </p>
+
+            <h4>Top Conversion Strategies</h4>
+            <ul class="styled-list">
+                <li><strong>Clear Call-to-Action:</strong> Always include a direct, specific CTA with your tracking link</li>
+                <li><strong>Create Urgency:</strong> Mention limited-time offers or the importance of addressing mental health now</li>
+                <li><strong>Social Proof:</strong> Reference user testimonials, success stories, or your own positive experience</li>
+                <li><strong>Address Objections:</strong> Proactively answer common questions about cost, privacy, effectiveness</li>
+                <li><strong>Multiple Touchpoints:</strong> Don't expect conversion on first mention. Follow up consistently</li>
+                <li><strong>Link Placement:</strong> Put your tracking link in bio, pinned comments, and video descriptions</li>
+                <li><strong>Track Performance:</strong> Use Rewardful analytics to see which content drives best results</li>
+            </ul>
+
+            <p class="placeholder-text"><strong>Want more conversion examples?</strong> Contact Dylan@usebluestone.com for personalized strategy advice.</p>
+        </div>
+
+        <!-- CONTENT CALENDAR -->
+        <div class="content-block">
+            <h3>Content Planning & Calendars</h3>
+
+            <!-- PLACEHOLDER: Add content calendar info -->
+            <p class="placeholder-text">
+                Consistency is key to affiliate success. Use these resources to plan your content calendar and stay organized:
+            </p>
+
+            <h4>Content Ideas by Theme</h4>
+            <ul class="styled-list">
+                <li><strong>Mental Health Monday:</strong> Share mental health tips and introduce Bluestone as a resource</li>
+                <li><strong>Wellness Wednesday:</strong> Discuss self-care practices and how Bluestone fits in</li>
+                <li><strong>Feature Friday:</strong> Highlight specific Bluestone features and benefits</li>
+                <li><strong>Story Sunday:</strong> Share personal experiences or user testimonials</li>
+                <li><strong>Mental Health Awareness Days:</strong> Align with relevant awareness dates and campaigns</li>
+            </ul>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download Content Calendar Template</a>
+                <a href="#" class="btn-secondary">View 30-Day Content Plan (Google Doc)</a>
+            </div>
+        </div>
+
+        <!-- ANALYTICS & TRACKING -->
+        <div class="content-block">
+            <h3>Analytics & Performance Tracking</h3>
+
+            <!-- PLACEHOLDER: Add analytics guide here -->
+            <p class="placeholder-text">
+                Understanding your metrics helps you optimize for better results. Track these key performance indicators:
+            </p>
+
+            <h4>Key Metrics to Monitor</h4>
+            <ul class="styled-list">
+                <li><strong>Click-through Rate:</strong> How many people click your affiliate link</li>
+                <li><strong>Conversion Rate:</strong> Percentage of clicks that become paying customers</li>
+                <li><strong>Content Performance:</strong> Which posts, videos, or platforms drive the most conversions</li>
+                <li><strong>Engagement Metrics:</strong> Comments, shares, saves on your Bluestone content</li>
+                <li><strong>Earnings Per Click:</strong> Average commission earned per link click</li>
+            </ul>
+
+            <!-- PLACEHOLDER: Add analytics dashboard screenshot -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📈</div>
+                <div class="media-placeholder-text">Add Rewardful Dashboard Screenshot Here</div>
+                <div class="media-placeholder-subtext">Annotated example of the affiliate analytics dashboard</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="btn-group">
+                <a href="https://rewardful.com" class="btn" target="_blank">Access Rewardful Dashboard</a>
+                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary">📄 Analytics Guide (Coming Soon)</a>
+            </div>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">Analytics guide is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 6: SUPPORT & COMMUNITY
+         ============================================ -->
+    <section id="support" class="content-section">
+        <div class="section-header">
+            <span class="section-number">6</span>
+            <h2>Support & Community</h2>
+            <p>Get help when you need it, connect with other affiliates, and access answers to common questions.</p>
+        </div>
+
+        <!-- HOW TO GET HELP -->
+        <div class="content-block">
+            <h3>How to Get Help</h3>
+
+            <!-- PLACEHOLDER: Add support info here -->
+            <p class="placeholder-text">
+                Deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident. Our affiliate support team is here to ensure your success. Here's how to reach us:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📧</div>
+                    <h5>Email Support</h5>
+                    <p><strong>Dylan@usebluestone.com</strong></p>
+                    <p>For general questions, custom asset requests, or partnership inquiries. Response within 24-48 hours.</p>
+                    <a href="mailto:Dylan@usebluestone.com" class="btn btn-small">Send Email</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h5>Affiliate Community</h5>
+                    <!-- PLACEHOLDER: Add community link -->
+                    <p>Join our private Slack/Discord community to connect with other Bluestone affiliates.</p>
+                    <a href="#" class="btn btn-small">Join Community</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h5>Knowledge Base</h5>
+                    <!-- PLACEHOLDER: Add knowledge base link -->
+                    <p>Browse articles, tutorials, and guides for answers to common questions.</p>
+                    <a href="#" class="btn btn-small">Visit Knowledge Base</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎥</div>
+                    <h5>Video Tutorials</h5>
+                    <!-- PLACEHOLDER: Add tutorial library link -->
+                    <p>Watch step-by-step video guides for setting up tracking, creating content, and more.</p>
+                    <a href="#" class="btn btn-small">Watch Tutorials</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AFFILIATE COMMUNITY -->
+        <div class="content-block">
+            <h3>Join the Affiliate Community</h3>
+
+            <!-- PLACEHOLDER: Add community info here -->
+            <p class="placeholder-text">
+                Connect with fellow Bluestone affiliates to share strategies, celebrate wins, and support each other. Community coming soon:
+            </p>
+
+            <h4>Community Benefits</h4>
+            <ul class="styled-list">
+                <li>Share content strategies and learn what's working for other affiliates</li>
+                <li>Get feedback on your content before posting</li>
+                <li>Access exclusive training sessions and webinars</li>
+                <li>Early access to new features, assets, and promotional materials</li>
+                <li>Monthly challenges with bonus rewards for top performers</li>
+                <li>Direct connection with the Bluestone team</li>
+            </ul>
+
+            <!-- PLACEHOLDER: Add community screenshot -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">👥</div>
+                <div class="media-placeholder-text">Add Community Platform Screenshot Here</div>
+                <div class="media-placeholder-subtext">Preview of the affiliate community (Slack/Discord/Forum)</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <a href="#" class="btn">Join the Community Now</a>
+        </div>
+
+        <!-- FAQ -->
+        <div class="content-block">
+            <h3>Frequently Asked Questions</h3>
+
+            <p class="placeholder-text">
+                Quick answers to common questions from influencers and content creators:
+            </p>
+
+            <h4>💰 Commissions & Payments</h4>
+            <ul class="styled-list">
+                <li><strong>Q: How do I get paid?</strong><br>A: Commissions are paid Net 30 (monthly, 30 days after month end) via PayPal, bank transfer, or Wise. Minimum payout is $50.</li>
+                <li><strong>Q: How long does the cookie last?</strong><br>A: 90 days. If someone clicks your link and signs up within 90 days, you get credit.</li>
+                <li><strong>Q: Do I earn on free tier signups?</strong><br>A: No, only paid subscriptions (Starter $4.99, Pro $9.99, Premium $14.99, Ultimate $29.99).</li>
+                <li><strong>Q: Is it recurring?</strong><br>A: YES! You earn 30% every month for as long as the customer stays subscribed.</li>
+            </ul>
+
+            <h4>🎯 Promotion & Content</h4>
+            <ul class="styled-list">
+                <li><strong>Q: Can I promote if I'm outside the US?</strong><br>A: Yes! Bluestone is available internationally. Focus on English-speaking markets for best results.</li>
+                <li><strong>Q: Can I use paid ads?</strong><br>A: Yes, but see the Marketer Resources page for specific guidelines. No bidding on "Bluestone Wellness" branded keywords.</li>
+                <li><strong>Q: What if my audience asks technical questions?</strong><br>A: Direct them to Dylan@usebluestone.com or the Bluestone website's support section.</li>
+                <li><strong>Q: Can I create my own discount code?</strong><br>A: Custom codes coming soon! Check back or contact Dylan@usebluestone.com.</li>
+            </ul>
+
+            <h4>📊 Tracking & Analytics</h4>
+            <ul class="styled-list">
+                <li><strong>Q: How do I track my performance?</strong><br>A: Log into your Rewardful dashboard to see clicks, conversions, and earnings in real-time.</li>
+                <li><strong>Q: Can I promote Bluestone alongside competitor apps?</strong><br>A: Yes, just be fair and honest. Comparison content is allowed as long as it's factual.</li>
+            </ul>
+
+            <h4>Commission & Payments</h4>
+            <!-- PLACEHOLDER: Add commission FAQs -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">💰</div>
+                <div class="media-placeholder-text">Add Commission FAQs Here</div>
+                <div class="media-placeholder-subtext">Q&A about commission structure, payment schedule, minimum thresholds</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Tracking & Links</h4>
+            <!-- PLACEHOLDER: Add tracking FAQs -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🔗</div>
+                <div class="media-placeholder-text">Add Tracking FAQs Here</div>
+                <div class="media-placeholder-subtext">Q&A about affiliate links, cookie duration, attribution</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Content & Promotion</h4>
+            <!-- PLACEHOLDER: Add content FAQs -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📝</div>
+                <div class="media-placeholder-text">Add Content FAQs Here</div>
+                <div class="media-placeholder-subtext">Q&A about allowed promotion methods, content guidelines, disclosures</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <a href="#" class="btn">View Complete FAQ (Google Doc)</a>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="content-block">
+            <h3>Contact Information</h3>
+
+            <!-- PLACEHOLDER: Add contact details here -->
+            <p class="placeholder-text">
+                Need to reach out with questions, ideas, or support requests? Here's how to contact us:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📬</div>
+                    <h5>General Affiliate Inquiries</h5>
+                    <!-- PLACEHOLDER: Update email -->
+                    <p><strong>Email:</strong> affiliates@usebluestone.com</p>
+                    <p>For questions, support, or partnership opportunities</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎨</div>
+                    <h5>Custom Asset Requests</h5>
+                    <!-- PLACEHOLDER: Update email -->
+                    <p><strong>Email:</strong> creative@usebluestone.com</p>
+                    <p>Request custom graphics, videos, or branded content</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🤝</div>
+                    <h5>Partnership Opportunities</h5>
+                    <!-- PLACEHOLDER: Update email -->
+                    <p><strong>Email:</strong> partnerships@usebluestone.com</p>
+                    <p>Discuss larger collaborations or brand partnerships</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⚙️</div>
+                    <h5>Technical Support</h5>
+                    <!-- PLACEHOLDER: Update email -->
+                    <p><strong>Email:</strong> support@usebluestone.com</p>
+                    <p>Issues with tracking, dashboard, or technical problems</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-section">
+                    <h3>Affiliate Support</h3>
+                    <p>Questions about the program or need custom resources?</p>
+                    <p><strong>Email:</strong> <a href="mailto:Dylan@usebluestone.com">Dylan@usebluestone.com</a></p>
+                    <p>Our team responds within 24-48 hours.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Back to Home</a>
+                    <a href="marketers.html">Marketer Resources</a>
+                    <a href="https://usebluestone.com" target="_blank">Bluestone Website</a>
+                    <a href="https://rewardful.com" target="_blank">Rewardful Dashboard</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#getting-started">Getting Started Guide</a>
+                    <a href="#social-media">Social Media Templates</a>
+                    <a href="#visual-assets">Download Assets</a>
+                    <a href="#support">Get Support</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About Bluestone Wellness</h3>
+                    <p>AI-powered holistic wellness companion that learns your personality and provides personalized support for sleep, mental health, fitness, nutrition, and meditation.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Affiliate Agreement</a>
+                    <a href="#">FTC Compliance</a>
+                </div>
+                <p class="copyright">&copy; 2025 Bluestone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

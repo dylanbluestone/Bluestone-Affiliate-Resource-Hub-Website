@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bluestone Affiliate Resource Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        /* ============================================
+           GLOBAL STYLES & RESET
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            /* Bluestone Wellness Brand Colors */
+            --primary-blue: #2563EB;
+            --primary-blue-dark: #1E40AF;
+            --secondary-blue: #3B82F6;
+            --accent-green: #1DB954;
+            --near-black: #1a1a1a;
+            --dark-surface: #1E293B;
+            --dark-surface-elevated: #334155;
+            --soft-cream: #F9F7F4;
+            --warm-white: #FFFFFF;
+            --text-dark: #1a1a1a;
+            --text-medium: #374151;
+            --text-light: #6B7280;
+            --border-light: #E5E7EB;
+            --success-green: #10B981;
+            --shadow: rgba(0, 0, 0, 0.08);
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #f5f5f5;
+            overflow-x: hidden;
+            font-weight: 400;
+        }
+
+        /* ============================================
+           TYPOGRAPHY - INTER FONT
+           ============================================ */
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Inter', sans-serif;
+        }
+
+        h1 {
+            font-weight: 800;
+        }
+
+        h2, h3 {
+            font-weight: 700;
+        }
+
+        h4, h5 {
+            font-weight: 600;
+        }
+
+        h6 {
+            font-weight: 600;
+        }
+
+        p {
+            font-weight: 400;
+        }
+
+        button, .btn, .nav-links a {
+            font-family: 'Inter', sans-serif;
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .nav-header {
+            background-color: var(--warm-white);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        /* ============================================
+           HERO SECTION
+           ============================================ */
+        .hero {
+            background: linear-gradient(135deg, #1E40AF 0%, #2563EB 100%);
+            color: #FFFFFF;
+            padding: 8rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
+            opacity: 0.3;
+        }
+
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            line-height: 1.2;
+            letter-spacing: -1px;
+            color: #FFFFFF;
+        }
+
+        .hero p {
+            font-size: 1.25rem;
+            margin-bottom: 3rem;
+            line-height: 1.8;
+            opacity: 0.95;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #FFFFFF;
+        }
+
+        /* ============================================
+           CTA CARDS
+           ============================================ */
+        .cta-section {
+            max-width: 1200px;
+            margin: -4rem auto 6rem;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2.5rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .cta-card {
+            background: var(--warm-white);
+            border-radius: 16px;
+            padding: 3rem;
+            box-shadow: 0 8px 24px var(--shadow);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+            border: 2px solid transparent;
+        }
+
+        .cta-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+            border-color: var(--primary-blue);
+        }
+
+        .cta-card-icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 1.5rem;
+            background: linear-gradient(135deg, #1E40AF, #2563EB);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+        }
+
+        .cta-card h2 {
+            font-size: 1.75rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .cta-card p {
+            color: var(--text-medium);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 1rem 2.5rem;
+            background: var(--primary-blue);
+            color: var(--warm-white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn:hover {
+            background: var(--primary-blue-dark);
+            border-color: var(--primary-blue-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(74, 123, 167, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: var(--warm-white);
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--text-dark);
+            color: var(--warm-white);
+            padding: 4rem 2rem 2rem;
+            margin-top: 6rem;
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-light);
+            line-height: 1.8;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--warm-white);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--warm-white);
+        }
+
+        .copyright {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero p {
+                font-size: 1.1rem;
+            }
+
+            .cta-section {
+                margin-top: -3rem;
+                gap: 1.5rem;
+            }
+
+            .cta-card {
+                padding: 2rem;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .footer-main {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero {
+                padding: 5rem 1.5rem;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .cta-section {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav-header">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Bluestone</a>
+            <div class="nav-links">
+                <a href="#support">Support</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Partner with Bluestone Wellness</h1>
+            <p>Earn 30% lifetime recurring commissions promoting AI-powered holistic wellness. Join our affiliate program and help people transform their health journey with an app that actually learns them.</p>
+        </div>
+    </section>
+
+    <!-- CTA CARDS -->
+    <section class="cta-section">
+        <!-- Card for Influencers -->
+        <div class="cta-card">
+            <div class="cta-card-icon">📱</div>
+            <h2>I'm an Influencer</h2>
+            <p>Content creators, YouTubers, TikTokers, Instagrammers - get social media templates, content guidelines, and creative assets to share Bluestone authentically with your community.</p>
+            <a href="influencers.html" class="btn">Access Influencer Resources</a>
+        </div>
+
+        <!-- Card for Professional Marketers -->
+        <div class="cta-card">
+            <div class="cta-card-icon">💼</div>
+            <h2>I'm a Marketer</h2>
+            <p>Professional affiliate marketers using paid ads, email marketing, SEO, and content marketing - get proven ad copy, email sequences, landing pages, and compliance guidelines.</p>
+            <a href="marketers.html" class="btn">Access Marketer Resources</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" id="support">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-section">
+                    <h3>Affiliate Support</h3>
+                    <p>Have questions about the program, need custom resources, or want partnership guidance?</p>
+                    <p><strong>Email:</strong> <a href="mailto:dylan@usebluestone.com">dylan@usebluestone.com</a></p>
+                    <p>Our team typically responds within 24-48 hours.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <div class="footer-links">
+                        <a href="influencers.html">Influencer Resources</a>
+                        <a href="marketers.html">Marketer Resources</a>
+                        <a href="https://usebluestone.com" target="_blank">Bluestone Website</a>
+                        <a href="https://rewardful.com" target="_blank">Rewardful Dashboard</a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About Bluestone Wellness</h3>
+                    <p>Bluestone Wellness is an AI-powered holistic wellness companion that learns your personality and provides personalized support for sleep, mental health, fitness, nutrition, and meditation.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Affiliate Agreement</a>
+                    <a href="#">FTC Compliance Guidelines</a>
+                </div>
+                <p class="copyright">&copy; 2025 Bluestone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
