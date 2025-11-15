@@ -1,0 +1,1930 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resources for Affiliate Marketers | Bluestone</title>
+    <style>
+        /* ============================================
+           GLOBAL STYLES & RESET
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #4A7BA7;
+            --primary-blue-dark: #3A6287;
+            --accent-teal: #5C9EAD;
+            --soft-cream: #F9F7F4;
+            --warm-white: #FFFFFF;
+            --text-dark: #2C3E50;
+            --text-medium: #5A6C7D;
+            --text-light: #8B9BAA;
+            --border-light: #E5E9ED;
+            --success-green: #6BB589;
+            --warning-yellow: #F4B942;
+            --shadow: rgba(0, 0, 0, 0.08);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--soft-cream);
+        }
+
+        /* ============================================
+           NAVIGATION
+           ============================================ */
+        .nav-header {
+            background-color: var(--warm-white);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px var(--shadow);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .nav-links a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-blue);
+        }
+
+        .btn-switch {
+            background: var(--primary-blue);
+            color: var(--warm-white);
+            padding: 0.5rem 1.25rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .btn-switch:hover {
+            background: var(--primary-blue-dark);
+            transform: translateY(-2px);
+        }
+
+        /* ============================================
+           PAGE HEADER
+           ============================================ */
+        .page-header {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-teal) 100%);
+            color: var(--warm-white);
+            padding: 5rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .page-header-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .page-header h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        .page-header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            line-height: 1.8;
+        }
+
+        /* ============================================
+           SECTION NAVIGATION
+           ============================================ */
+        .section-nav {
+            background: var(--warm-white);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 8px var(--shadow);
+            position: sticky;
+            top: 80px;
+            z-index: 999;
+        }
+
+        .section-nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .section-nav a {
+            color: var(--text-medium);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .section-nav a:hover {
+            background: var(--soft-cream);
+            color: var(--primary-blue);
+        }
+
+        /* ============================================
+           CONTENT SECTIONS
+           ============================================ */
+        .content-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 5rem 2rem;
+        }
+
+        .content-section:nth-child(even) {
+            background: var(--warm-white);
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 4rem;
+        }
+
+        .section-number {
+            display: inline-block;
+            background: var(--primary-blue);
+            color: var(--warm-white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            line-height: 40px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 700;
+        }
+
+        .section-header p {
+            font-size: 1.15rem;
+            color: var(--text-medium);
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Content Blocks */
+        .content-block {
+            background: var(--warm-white);
+            padding: 3rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            box-shadow: 0 4px 12px var(--shadow);
+        }
+
+        .content-section:nth-child(even) .content-block {
+            background: var(--soft-cream);
+        }
+
+        .content-block h3 {
+            font-size: 1.75rem;
+            color: var(--text-dark);
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .content-block h4 {
+            font-size: 1.3rem;
+            color: var(--primary-blue);
+            margin: 2rem 0 1rem;
+            font-weight: 600;
+        }
+
+        .placeholder-text {
+            color: var(--text-medium);
+            line-height: 1.8;
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        /* Media Placeholders */
+        .media-placeholder {
+            background: var(--border-light);
+            border: 3px dashed var(--text-light);
+            border-radius: 12px;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin: 2rem 0;
+            min-height: 300px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .media-placeholder-icon {
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            opacity: 0.5;
+        }
+
+        .media-placeholder-text {
+            color: var(--text-light);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .media-placeholder-subtext {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+
+        /* Resource Grid */
+        .resource-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .resource-card {
+            background: linear-gradient(135deg, var(--soft-cream), var(--warm-white));
+            padding: 2rem;
+            border-radius: 10px;
+            border: 2px solid var(--border-light);
+            transition: all 0.3s ease;
+        }
+
+        .content-section:nth-child(even) .resource-card {
+            background: linear-gradient(135deg, var(--warm-white), var(--soft-cream));
+        }
+
+        .resource-card:hover {
+            border-color: var(--primary-blue);
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px var(--shadow);
+        }
+
+        .resource-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .resource-card h5 {
+            font-size: 1.25rem;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .resource-card p {
+            color: var(--text-medium);
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+
+        /* Alert/Warning Boxes */
+        .alert-box {
+            background: #FFF9E6;
+            border-left: 4px solid var(--warning-yellow);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 8px;
+        }
+
+        .alert-box-success {
+            background: #E8F5E9;
+            border-left-color: var(--success-green);
+        }
+
+        .alert-box h4 {
+            color: var(--text-dark);
+            margin: 0 0 0.75rem 0;
+            font-size: 1.1rem;
+        }
+
+        .alert-box p {
+            color: var(--text-medium);
+            margin: 0;
+            line-height: 1.6;
+        }
+
+        /* Buttons */
+        .btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary-blue);
+            color: var(--warm-white);
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn:hover {
+            background: var(--primary-blue-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(74, 123, 167, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: var(--primary-blue);
+            border: 2px solid var(--primary-blue);
+        }
+
+        .btn-secondary:hover {
+            background: var(--primary-blue);
+            color: var(--warm-white);
+        }
+
+        .btn-small {
+            padding: 0.75rem 1.5rem;
+            font-size: 0.95rem;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+
+        /* Lists */
+        .styled-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .styled-list li {
+            padding: 1rem 0 1rem 2.5rem;
+            position: relative;
+            color: var(--text-medium);
+            line-height: 1.8;
+            border-bottom: 1px solid var(--border-light);
+        }
+
+        .styled-list li:last-child {
+            border-bottom: none;
+        }
+
+        .styled-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success-green);
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        /* Code/Text Box */
+        .code-box {
+            background: var(--text-dark);
+            color: var(--warm-white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 1.5rem 0;
+            overflow-x: auto;
+        }
+
+        /* ============================================
+           FOOTER
+           ============================================ */
+        .footer {
+            background: var(--text-dark);
+            color: var(--warm-white);
+            padding: 4rem 2rem 2rem;
+            margin-top: 0;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .footer-main {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            font-size: 1.25rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: var(--text-light);
+            line-height: 1.8;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--warm-white);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 2rem;
+            text-align: center;
+        }
+
+        .footer-bottom-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1rem 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .footer-bottom a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-size: 0.95rem;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--warm-white);
+        }
+
+        .copyright {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        /* ============================================
+           RESPONSIVE DESIGN
+           ============================================ */
+        @media (max-width: 768px) {
+            .page-header h1 {
+                font-size: 2.25rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .content-block {
+                padding: 2rem;
+            }
+
+            .section-nav {
+                top: 70px;
+            }
+
+            .section-nav-content {
+                gap: 0.75rem;
+            }
+
+            .media-placeholder {
+                padding: 3rem 1.5rem;
+                min-height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .page-header {
+                padding: 4rem 1.5rem 2rem;
+            }
+
+            .page-header h1 {
+                font-size: 1.85rem;
+            }
+
+            .content-section {
+                padding: 3rem 1.5rem;
+            }
+
+            .resource-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav-header">
+        <div class="nav-content">
+            <a href="index.html" class="logo">Bluestone</a>
+            <div class="nav-links">
+                <a href="index.html">← Back to Home</a>
+                <a href="influencers.html" class="btn-switch">Switch to Influencer Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header">
+        <div class="page-header-content">
+            <h1>Resources for Affiliate Marketers</h1>
+            <p>Professional-grade assets for paid advertising, email campaigns, and content marketing. Everything you need to drive conversions at scale.</p>
+        </div>
+    </header>
+
+    <!-- SECTION NAVIGATION -->
+    <nav class="section-nav">
+        <div class="section-nav-content">
+            <a href="#getting-started">Getting Started</a>
+            <a href="#paid-ads">Paid Advertising</a>
+            <a href="#email-marketing">Email Marketing</a>
+            <a href="#content-marketing">Content Marketing</a>
+            <a href="#visual-assets">Visual Assets</a>
+            <a href="#compliance">Compliance</a>
+            <a href="#support">Support</a>
+        </div>
+    </nav>
+
+    <!-- ============================================
+         SECTION 1: GETTING STARTED
+         ============================================ -->
+    <section id="getting-started" class="content-section">
+        <div class="section-header">
+            <span class="section-number">1</span>
+            <h2>Getting Started</h2>
+            <p>Essential information for affiliate marketers to start promoting Bluestone effectively through paid channels.</p>
+        </div>
+
+        <!-- INTRO CONTENT BLOCK -->
+        <div class="content-block">
+            <h3>Welcome, Affiliate Marketers</h3>
+
+            <!-- PLACEHOLDER: Add your introduction text here -->
+            <p class="placeholder-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. This resource hub contains everything you need to successfully promote Bluestone through paid advertising, email marketing, content marketing, and other professional affiliate channels. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+            </p>
+
+            <h4>What Makes Bluestone a Great Offer</h4>
+            <ul class="styled-list">
+                <li><strong>30% Lifetime Recurring Commission:</strong> Earn ongoing revenue from every customer</li>
+                <li><strong>Growing Market:</strong> Mental health support is increasingly in demand</li>
+                <li><strong>Sticky Product:</strong> High retention rates mean longer customer lifetime value</li>
+                <li><strong>Multiple Price Points:</strong> Various subscription tiers to convert different audience segments</li>
+                <li><strong>Proven Conversion Rates:</strong> Optimized landing pages and checkout process</li>
+                <li><strong>Mission-Driven Appeal:</strong> Customers feel good about supporting mental health</li>
+            </ul>
+
+            <!-- PLACEHOLDER: Add overview video here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🎥</div>
+                <div class="media-placeholder-text">Add Affiliate Marketer Overview Video Here</div>
+                <div class="media-placeholder-subtext">Introduction to the program and conversion strategies</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+        </div>
+
+        <!-- TRACKING LINKS -->
+        <div class="content-block">
+            <h3>Setting Up Your Tracking Links</h3>
+
+            <!-- PLACEHOLDER: Add tracking info here -->
+            <p class="placeholder-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore. All affiliate tracking is managed through Rewardful, which provides robust analytics and reliable commission tracking. Excepteur sint occaecat cupidatat non proident.
+            </p>
+
+            <h4>How Tracking Works</h4>
+            <ul class="styled-list">
+                <li>Each affiliate receives a unique tracking link through Rewardful</li>
+                <li>Cookie duration: 60 days (customers have 60 days to convert after clicking your link)</li>
+                <li>First-click attribution (first affiliate to send the customer gets credit)</li>
+                <li>Real-time tracking dashboard with detailed analytics</li>
+                <li>Ability to create custom tracking links for different campaigns</li>
+            </ul>
+
+            <h4>Creating Campaign-Specific Links</h4>
+            <!-- PLACEHOLDER: Add tracking tutorial here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🔗</div>
+                <div class="media-placeholder-text">Add Tracking Link Tutorial Here</div>
+                <div class="media-placeholder-subtext">Step-by-step guide to creating and managing tracking links</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="btn-group">
+                <a href="#" class="btn">Access Rewardful Dashboard</a>
+                <a href="#" class="btn-secondary">Download Tracking Guide (PDF)</a>
+            </div>
+        </div>
+
+        <!-- QUICK START CHECKLIST -->
+        <div class="content-block">
+            <h3>Quick Start Checklist</h3>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">1️⃣</div>
+                    <h5>Set Up Tracking</h5>
+                    <!-- PLACEHOLDER: Add checklist item -->
+                    <p>Create your affiliate account in Rewardful and generate your primary tracking link.</p>
+                    <a href="#" class="btn btn-small">Setup Instructions</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">2️⃣</div>
+                    <h5>Review Product Details</h5>
+                    <!-- PLACEHOLDER: Add checklist item -->
+                    <p>Understand Bluestone's features, pricing, and unique selling points for your campaigns.</p>
+                    <a href="#" class="btn btn-small">View Product Info</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">3️⃣</div>
+                    <h5>Download Marketing Assets</h5>
+                    <!-- PLACEHOLDER: Add checklist item -->
+                    <p>Get ad creatives, email templates, and landing page assets from this resource hub.</p>
+                    <a href="#visual-assets" class="btn btn-small">Browse Assets</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">4️⃣</div>
+                    <h5>Review Compliance Guidelines</h5>
+                    <!-- PLACEHOLDER: Add checklist item -->
+                    <p>Familiarize yourself with FTC requirements and prohibited marketing tactics.</p>
+                    <a href="#compliance" class="btn btn-small">View Guidelines</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">5️⃣</div>
+                    <h5>Launch Your Campaign</h5>
+                    <!-- PLACEHOLDER: Add checklist item -->
+                    <p>Deploy your marketing campaigns using our proven templates and strategies.</p>
+                    <a href="#paid-ads" class="btn btn-small">Get Templates</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">6️⃣</div>
+                    <h5>Monitor & Optimize</h5>
+                    <!-- PLACEHOLDER: Add checklist item -->
+                    <p>Track performance in Rewardful and iterate on your campaigns for better results.</p>
+                    <a href="#" class="btn btn-small">Analytics Guide</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- TARGET AUDIENCE INFO -->
+        <div class="content-block">
+            <h3>Target Audience Insights</h3>
+
+            <!-- PLACEHOLDER: Add audience insights here -->
+            <p class="placeholder-text">
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Understanding who converts best helps you optimize your targeting and messaging:
+            </p>
+
+            <h4>High-Converting Audience Segments</h4>
+            <!-- PLACEHOLDER: Add audience data here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📊</div>
+                <div class="media-placeholder-text">Add Audience Demographics Here</div>
+                <div class="media-placeholder-subtext">Charts/data showing top-converting demographics and psychographics</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <a href="#" class="btn">Download Audience Research (PDF)</a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 2: PAID ADVERTISING RESOURCES
+         ============================================ -->
+    <section id="paid-ads" class="content-section">
+        <div class="section-header">
+            <span class="section-number">2</span>
+            <h2>Paid Advertising Resources</h2>
+            <p>Ad copy templates, banner creatives, and best practices for Facebook, Google, TikTok, and other paid channels.</p>
+        </div>
+
+        <!-- AD COPY TEMPLATES -->
+        <div class="content-block">
+            <h3>Ad Copy Templates</h3>
+
+            <!-- PLACEHOLDER: Add ad copy intro here -->
+            <p class="placeholder-text">
+                Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Use these proven ad copy templates to create high-converting campaigns across platforms:
+            </p>
+
+            <h4>Facebook/Instagram Ad Copy</h4>
+            <!-- PLACEHOLDER: Add Facebook ad examples here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📱</div>
+                <div class="media-placeholder-text">Add Facebook Ad Examples Here</div>
+                <div class="media-placeholder-subtext">Screenshots of successful ad campaigns with copy and creative</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download Facebook Ad Templates (Google Doc)</a>
+                <a href="#" class="btn-secondary">View Swipe File</a>
+            </div>
+
+            <h4>Google Ads Copy</h4>
+            <!-- PLACEHOLDER: Add Google ad examples here -->
+            <div class="code-box">
+                <!-- PLACEHOLDER: Add sample Google ad -->
+                Headline 1: AI Mental Health Support | Available 24/7<br>
+                Headline 2: Start Your Mental Health Journey Today<br>
+                Headline 3: Affordable, Confidential, Accessible<br>
+                Description: Professional AI-powered mental health chatbot. Get support anytime, anywhere. Try Bluestone free today.
+            </div>
+
+            <a href="#" class="btn">Download Google Ads Templates (Google Doc)</a>
+
+            <h4>TikTok/YouTube Ad Scripts</h4>
+            <!-- PLACEHOLDER: Add video ad scripts here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🎬</div>
+                <div class="media-placeholder-text">Add Video Ad Scripts Here</div>
+                <div class="media-placeholder-subtext">Scripts and storyboards for video advertising</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <a href="#" class="btn">Download Video Ad Scripts (PDF)</a>
+        </div>
+
+        <!-- BANNER ADS -->
+        <div class="content-block">
+            <h3>Display Ads & Banner Creatives</h3>
+
+            <!-- PLACEHOLDER: Add banner ad intro here -->
+            <p class="placeholder-text">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Download professionally designed banner ads in all standard sizes:
+            </p>
+
+            <h4>Available Banner Sizes</h4>
+            <!-- PLACEHOLDER: Add banner examples here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🖼️</div>
+                <div class="media-placeholder-text">Add Banner Ad Gallery Here</div>
+                <div class="media-placeholder-subtext">Display of all available banner sizes and variations</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📐</div>
+                    <h5>Standard Display Sizes</h5>
+                    <p>300x250, 728x90, 160x600, 300x600, 970x250 and more. All formats included.</p>
+                    <a href="#" class="btn btn-small">Download All Sizes</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📱</div>
+                    <h5>Social Media Ads</h5>
+                    <p>Optimized for Facebook, Instagram, LinkedIn, Twitter ad specifications.</p>
+                    <a href="#" class="btn btn-small">Download Social Ads</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎨</div>
+                    <h5>Animated Banners</h5>
+                    <p>HTML5 and GIF animated banners for higher engagement rates.</p>
+                    <a href="#" class="btn btn-small">Download Animated</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">✏️</div>
+                    <h5>Editable Templates</h5>
+                    <p>Figma/Canva templates to customize banners for your campaigns.</p>
+                    <a href="#" class="btn btn-small">Access Templates</a>
+                </div>
+            </div>
+
+            <a href="#" class="btn">Download Complete Banner Pack (ZIP)</a>
+        </div>
+
+        <!-- LANDING PAGE BEST PRACTICES -->
+        <div class="content-block">
+            <h3>Landing Page Best Practices</h3>
+
+            <!-- PLACEHOLDER: Add landing page info here -->
+            <p class="placeholder-text">
+                Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. When driving paid traffic, where you send visitors matters as much as the ad itself:
+            </p>
+
+            <h4>Recommended Landing Pages</h4>
+            <ul class="styled-list">
+                <li><strong>Homepage:</strong> Best for brand awareness and general mental health support seekers</li>
+                <li><strong>Pricing Page:</strong> Ideal for conversion-focused campaigns targeting ready buyers</li>
+                <li><strong>Features Page:</strong> Great for comparing against competitors or alternatives</li>
+                <li><strong>Custom Landing Pages:</strong> Request custom pages for specific campaigns (min $5k/month spend)</li>
+            </ul>
+
+            <div class="alert-box alert-box-success">
+                <h4>💡 Pro Tip: Message Match</h4>
+                <p>Always ensure your landing page message matches your ad copy. If your ad mentions "affordable mental health support," send to pricing. If it mentions "24/7 availability," send to features.</p>
+            </div>
+
+            <!-- PLACEHOLDER: Add landing page examples here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🌐</div>
+                <div class="media-placeholder-text">Add Landing Page Examples Here</div>
+                <div class="media-placeholder-subtext">Screenshots of main landing pages with conversion notes</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <a href="#" class="btn">Download Landing Page Guide (PDF)</a>
+        </div>
+
+        <!-- PLATFORM-SPECIFIC STRATEGIES -->
+        <div class="content-block">
+            <h3>Platform-Specific Ad Strategies</h3>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">👤</div>
+                    <h5>Facebook/Instagram Ads</h5>
+                    <!-- PLACEHOLDER: Add platform strategy -->
+                    <p>Target interests: mental health, wellness, self-care, therapy, meditation. Use Advantage+ for best results.</p>
+                    <a href="#" class="btn btn-small">View Strategy</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔍</div>
+                    <h5>Google Search Ads</h5>
+                    <!-- PLACEHOLDER: Add platform strategy -->
+                    <p>Target high-intent keywords like "online therapy," "mental health app," "AI therapist." Focus on conversions.</p>
+                    <a href="#" class="btn btn-small">View Strategy</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎵</div>
+                    <h5>TikTok Ads</h5>
+                    <!-- PLACEHOLDER: Add platform strategy -->
+                    <p>Video-first creative with authentic messaging. Target wellness and self-improvement audiences aged 18-34.</p>
+                    <a href="#" class="btn btn-small">View Strategy</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">▶️</div>
+                    <h5>YouTube Ads</h5>
+                    <!-- PLACEHOLDER: Add platform strategy -->
+                    <p>In-stream ads on mental health, meditation, and wellness content. 15-30 second skippable formats work best.</p>
+                    <a href="#" class="btn btn-small">View Strategy</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- CAMPAIGN OPTIMIZATION -->
+        <div class="content-block">
+            <h3>Campaign Optimization Tips</h3>
+
+            <!-- PLACEHOLDER: Add optimization tips here -->
+            <p class="placeholder-text">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet. Maximize your ROI with these proven optimization strategies:
+            </p>
+
+            <ul class="styled-list">
+                <li>Start with broad targeting and let the algorithm optimize toward converters</li>
+                <li>Test at least 3-5 ad variations to find winning creative</li>
+                <li>Use dynamic creative testing on Facebook for faster optimization</li>
+                <li>Set conversion tracking properly—optimize for purchases, not just clicks</li>
+                <li>Allow campaigns 3-7 days to stabilize before making major changes</li>
+                <li>Scale winning campaigns gradually (20-30% budget increases every 3 days)</li>
+                <li>Retarget website visitors and video viewers with specific conversion offers</li>
+            </ul>
+
+            <a href="#" class="btn">Download Complete Optimization Guide (PDF)</a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 3: EMAIL MARKETING
+         ============================================ -->
+    <section id="email-marketing" class="content-section">
+        <div class="section-header">
+            <span class="section-number">3</span>
+            <h2>Email Marketing</h2>
+            <p>Email templates, subject line formulas, and campaign structures to convert your email list.</p>
+        </div>
+
+        <!-- EMAIL TEMPLATES -->
+        <div class="content-block">
+            <h3>Email Templates</h3>
+
+            <!-- PLACEHOLDER: Add email intro here -->
+            <p class="placeholder-text">
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam. Use these conversion-optimized email templates for your campaigns:
+            </p>
+
+            <h4>Available Email Templates</h4>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📧</div>
+                    <h5>Product Introduction Email</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>Introduce Bluestone to your list with benefits-focused messaging and clear CTA.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💰</div>
+                    <h5>Limited-Time Offer Email</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>Create urgency with time-sensitive promotions (coordinate with us for actual offers).</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⭐</div>
+                    <h5>Social Proof Email</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>Feature customer testimonials and success stories to build trust.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📖</div>
+                    <h5>Educational Email Series</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>5-email nurture sequence that educates about mental health and introduces Bluestone.</p>
+                    <a href="#" class="btn btn-small">View Series</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎁</div>
+                    <h5>Free Trial Promotion</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>Emphasize the free trial to reduce friction and get users started.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔄</div>
+                    <h5>Re-engagement Email</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>Win back subscribers who didn't convert on first send.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download All Email Templates (Google Doc)</a>
+                <a href="#" class="btn-secondary">Access HTML Email Files</a>
+            </div>
+        </div>
+
+        <!-- SUBJECT LINES -->
+        <div class="content-block">
+            <h3>Subject Line Formulas</h3>
+
+            <!-- PLACEHOLDER: Add subject line info here -->
+            <p class="placeholder-text">
+                Nisi ut aliquid ex ea commodi consequatur. Subject lines determine whether your email gets opened. Use these proven formulas:
+            </p>
+
+            <h4>High-Performing Subject Line Templates</h4>
+            <!-- PLACEHOLDER: Add subject line examples here -->
+            <div class="code-box">
+                <!-- PLACEHOLDER: Add sample subject lines -->
+                ✓ "Your mental health deserves better than [common problem]"<br>
+                ✓ "This AI therapist is available 24/7 (and actually helpful)"<br>
+                ✓ "I found a way to make therapy more affordable"<br>
+                ✓ "Why I switched to AI-powered mental health support"<br>
+                ✓ "Get mental health support for less than [specific price]"<br>
+                ✓ "The mental health tool I wish I'd found sooner"<br>
+                ✓ "[First Name], have you tried this for anxiety/stress?"
+            </div>
+
+            <h4>Subject Line Best Practices</h4>
+            <ul class="styled-list">
+                <li>Keep subject lines under 50 characters for mobile optimization</li>
+                <li>Use personalization tokens (name, location) when available</li>
+                <li>Test questions vs. statements to see what resonates with your audience</li>
+                <li>Avoid spam trigger words like "free," "guarantee," "act now"</li>
+                <li>Create curiosity without being clickbait</li>
+                <li>A/B test subject lines on every major campaign</li>
+            </ul>
+
+            <a href="#" class="btn">Download Subject Line Swipe File (Google Doc)</a>
+        </div>
+
+        <!-- CAMPAIGN EXAMPLES -->
+        <div class="content-block">
+            <h3>Email Campaign Examples</h3>
+
+            <!-- PLACEHOLDER: Add campaign examples here -->
+            <p class="placeholder-text">
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur. See how successful affiliates structure their email campaigns:
+            </p>
+
+            <!-- PLACEHOLDER: Add campaign example 1 -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📨</div>
+                <div class="media-placeholder-text">Add Email Campaign Example #1 Here</div>
+                <div class="media-placeholder-subtext">Screenshots of complete campaign with open rates and conversion data</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <!-- PLACEHOLDER: Add campaign example 2 -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📨</div>
+                <div class="media-placeholder-text">Add Email Campaign Example #2 Here</div>
+                <div class="media-placeholder-subtext">Screenshots of complete campaign with open rates and conversion data</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+        </div>
+
+        <!-- EMAIL BEST PRACTICES -->
+        <div class="content-block">
+            <h3>Email Marketing Best Practices</h3>
+
+            <!-- PLACEHOLDER: Add best practices here -->
+            <p class="placeholder-text">
+                Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur. Maximize your email campaign performance:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">✅</div>
+                    <h5>Disclosure Requirements</h5>
+                    <p>Always include clear affiliate disclosure in your emails. Place it near the top, not just in fine print.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📱</div>
+                    <h5>Mobile Optimization</h5>
+                    <p>70%+ of emails are opened on mobile. Test all emails on mobile devices before sending.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎯</div>
+                    <h5>Segmentation</h5>
+                    <p>Segment based on engagement. Send different messages to openers vs. non-openers.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⏰</div>
+                    <h5>Send Timing</h5>
+                    <p>Test different send times. Mental health content often performs well in evenings.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔗</div>
+                    <h5>Clear CTAs</h5>
+                    <p>Use one primary CTA per email. Make buttons large and action-oriented.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <h5>Track & Optimize</h5>
+                    <p>Monitor open rates, click rates, and conversions. Iterate based on data.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- AUTOMATION SEQUENCES -->
+        <div class="content-block">
+            <h3>Email Automation Sequences</h3>
+
+            <!-- PLACEHOLDER: Add automation info here -->
+            <p class="placeholder-text">
+                At vero eos et accusamus et iusto odio dignissimos ducimus. Set up these automated sequences for hands-off revenue:
+            </p>
+
+            <h4>Recommended Automation Flows</h4>
+            <ul class="styled-list">
+                <li><strong>Welcome Series:</strong> Introduce new subscribers to mental health content, then Bluestone</li>
+                <li><strong>Nurture Sequence:</strong> Educational emails that build trust before the pitch</li>
+                <li><strong>Abandoned Cart:</strong> Remind users who visited pricing but didn't convert</li>
+                <li><strong>Post-Purchase:</strong> Follow up with customers to encourage referrals</li>
+                <li><strong>Re-engagement:</strong> Win back inactive subscribers with special offers</li>
+            </ul>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download Automation Templates (Google Doc)</a>
+                <a href="#" class="btn-secondary">View Flow Diagrams</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 4: CONTENT MARKETING
+         ============================================ -->
+    <section id="content-marketing" class="content-section">
+        <div class="section-header">
+            <span class="section-number">4</span>
+            <h2>Content Marketing</h2>
+            <p>Blog templates, SEO strategies, and content frameworks for review sites, comparison articles, and mental health content.</p>
+        </div>
+
+        <!-- BLOG POST TEMPLATES -->
+        <div class="content-block">
+            <h3>Blog Post Templates</h3>
+
+            <!-- PLACEHOLDER: Add blog template intro here -->
+            <p class="placeholder-text">
+                Similique sunt in culpa qui officia deserunt mollitia animi. Create high-converting content with these proven blog post frameworks:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">⭐</div>
+                    <h5>Product Review Template</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>"Bluestone Review: Is This AI Mental Health Chatbot Worth It?" - Complete review framework.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⚖️</div>
+                    <h5>Comparison Article Template</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>"Bluestone vs [Competitor]: Which Is Better?" - Side-by-side comparison format.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📋</div>
+                    <h5>Listicle Template</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>"10 Best Mental Health Apps in 2025" - Include Bluestone in curated lists.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎓</div>
+                    <h5>Educational Guide Template</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>"Complete Guide to Online Therapy" - Mention Bluestone as a solution within guides.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">❓</div>
+                    <h5>FAQ Article Template</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>"How Does AI Therapy Work?" - Answer common questions and position Bluestone.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💡</div>
+                    <h5>Alternative Article Template</h5>
+                    <!-- PLACEHOLDER: Add template description -->
+                    <p>"Looking for [Competitor] Alternatives? Try These" - Capture competitor search traffic.</p>
+                    <a href="#" class="btn btn-small">View Template</a>
+                </div>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download All Blog Templates (Google Doc)</a>
+                <a href="#" class="btn-secondary">Access Content Outlines</a>
+            </div>
+        </div>
+
+        <!-- SEO GUIDELINES -->
+        <div class="content-block">
+            <h3>SEO Best Practices</h3>
+
+            <!-- PLACEHOLDER: Add SEO guidelines here -->
+            <p class="placeholder-text">
+                Et harum quidem rerum facilis est et expedita distinctio. Optimize your content to rank in search engines and drive organic affiliate traffic:
+            </p>
+
+            <h4>Target Keywords</h4>
+            <!-- PLACEHOLDER: Add keyword research here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🔍</div>
+                <div class="media-placeholder-text">Add Keyword Research Here</div>
+                <div class="media-placeholder-subtext">List of high-value keywords with search volume and difficulty</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>On-Page SEO Checklist</h4>
+            <ul class="styled-list">
+                <li>Include target keyword in title tag, H1, and first 100 words</li>
+                <li>Use semantic keywords and related terms naturally throughout content</li>
+                <li>Optimize meta description (150-160 characters) with keyword and CTA</li>
+                <li>Add alt text to all images describing what they show</li>
+                <li>Use H2/H3 headers to structure content logically</li>
+                <li>Include internal links to other relevant content on your site</li>
+                <li>Add external links to authoritative sources (builds trust)</li>
+                <li>Aim for 1500-2500 words for competitive keywords</li>
+                <li>Include your affiliate disclosure clearly at the top</li>
+            </ul>
+
+            <a href="#" class="btn">Download SEO Checklist (PDF)</a>
+        </div>
+
+        <!-- REVIEW ARTICLE FRAMEWORK -->
+        <div class="content-block">
+            <h3>Product Review Article Framework</h3>
+
+            <!-- PLACEHOLDER: Add review framework here -->
+            <p class="placeholder-text">
+                Nam libero tempore, cum soluta nobis est eligendi optio. Product reviews are one of the highest-converting content types for affiliates. Use this framework:
+            </p>
+
+            <h4>Recommended Review Structure</h4>
+            <ul class="styled-list">
+                <li><strong>Introduction (100-150 words):</strong> Hook readers with a personal angle or common pain point</li>
+                <li><strong>Quick Verdict Box:</strong> Rating, pros/cons, pricing, CTA button at the top</li>
+                <li><strong>What Is Bluestone? (200-300 words):</strong> Explain the product clearly</li>
+                <li><strong>Key Features (400-600 words):</strong> Dive deep into main features with screenshots</li>
+                <li><strong>Pricing Breakdown (200-300 words):</strong> Transparent pricing with affiliate links</li>
+                <li><strong>Pros & Cons (150-200 words):</strong> Balanced, honest assessment</li>
+                <li><strong>Who It's For (100-150 words):</strong> Help readers self-select</li>
+                <li><strong>Comparison to Alternatives (300-400 words):</strong> Position against competitors</li>
+                <li><strong>Final Verdict (100-150 words):</strong> Clear recommendation with affiliate CTA</li>
+                <li><strong>FAQ Section:</strong> Answer common questions (great for SEO)</li>
+            </ul>
+
+            <!-- PLACEHOLDER: Add example review here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📄</div>
+                <div class="media-placeholder-text">Add Example Review Article Here</div>
+                <div class="media-placeholder-subtext">Full example article showing the framework in action</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download Review Template (Google Doc)</a>
+                <a href="#" class="btn-secondary">View Example Reviews</a>
+            </div>
+        </div>
+
+        <!-- COMPARISON ARTICLE FRAMEWORK -->
+        <div class="content-block">
+            <h3>Comparison Article Framework</h3>
+
+            <!-- PLACEHOLDER: Add comparison framework here -->
+            <p class="placeholder-text">
+                Omnis voluptas assumenda est, omnis dolor repellendus. Comparison articles capture high-intent search traffic from users actively comparing options:
+            </p>
+
+            <h4>Comparison Article Structure</h4>
+            <ul class="styled-list">
+                <li><strong>Introduction:</strong> Acknowledge the comparison and promise unbiased analysis</li>
+                <li><strong>Quick Comparison Table:</strong> Side-by-side feature/pricing comparison at the top</li>
+                <li><strong>Product A Overview:</strong> Detailed look at Bluestone features and benefits</li>
+                <li><strong>Product B Overview:</strong> Fair overview of the competitor</li>
+                <li><strong>Head-to-Head Comparison:</strong> Compare on key dimensions (price, features, ease of use, support)</li>
+                <li><strong>Which Should You Choose?:</strong> Help readers decide based on their needs</li>
+                <li><strong>Final Recommendation:</strong> Gently steer toward Bluestone with honest reasoning</li>
+            </ul>
+
+            <div class="alert-box">
+                <h4>⚠️ Important: Be Fair</h4>
+                <p>Don't bash competitors. Readers can tell when a comparison is biased, which hurts trust and conversions. Acknowledge where competitors excel, then explain why Bluestone might still be the better choice for specific use cases.</p>
+            </div>
+
+            <a href="#" class="btn">Download Comparison Template (Google Doc)</a>
+        </div>
+
+        <!-- CONTENT PROMOTION -->
+        <div class="content-block">
+            <h3>Content Promotion Strategies</h3>
+
+            <!-- PLACEHOLDER: Add promotion strategies here -->
+            <p class="placeholder-text">
+                Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus. Creating content is only half the battle—you need to promote it:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📧</div>
+                    <h5>Email Your List</h5>
+                    <p>Send new blog posts to your email subscribers. They're your warmest audience.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📱</div>
+                    <h5>Share on Social Media</h5>
+                    <p>Promote blog content on your social channels with compelling snippets.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h5>Engage in Communities</h5>
+                    <p>Share helpful content in Reddit, Facebook groups, and forums (follow each community's rules).</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔗</div>
+                    <h5>Build Backlinks</h5>
+                    <p>Reach out to relevant sites for guest posting and link opportunities to boost SEO.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💰</div>
+                    <h5>Run Paid Promotion</h5>
+                    <p>Use Facebook/Google ads to promote high-performing content to cold audiences.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔄</div>
+                    <h5>Repurpose Content</h5>
+                    <p>Turn blog posts into videos, infographics, social posts, and email sequences.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 5: VISUAL ASSETS
+         ============================================ -->
+    <section id="visual-assets" class="content-section">
+        <div class="section-header">
+            <span class="section-number">5</span>
+            <h2>Visual Assets</h2>
+            <p>Logos, banner ads, promotional graphics, and brand guidelines for all your marketing materials.</p>
+        </div>
+
+        <!-- LOGOS -->
+        <div class="content-block">
+            <h3>Logos & Brand Assets</h3>
+
+            <!-- PLACEHOLDER: Add logo info here -->
+            <p class="placeholder-text">
+                Saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Download official Bluestone logos for use in your campaigns:
+            </p>
+
+            <!-- PLACEHOLDER: Display logos here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🎨</div>
+                <div class="media-placeholder-text">Add Logo Variations Here</div>
+                <div class="media-placeholder-subtext">Display different logo versions and usage guidelines</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="btn-group">
+                <a href="#" class="btn-secondary btn-small">Download PNG Logos</a>
+                <a href="#" class="btn-secondary btn-small">Download SVG Logos</a>
+                <a href="#" class="btn-secondary btn-small">Download All Formats (ZIP)</a>
+            </div>
+
+            <h4>Brand Colors</h4>
+            <!-- PLACEHOLDER: Add color palette here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🎨</div>
+                <div class="media-placeholder-text">Add Brand Color Palette Here</div>
+                <div class="media-placeholder-subtext">Color swatches with hex/RGB values</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <a href="#" class="btn">Download Brand Style Guide (PDF)</a>
+        </div>
+
+        <!-- BANNER ADS (detailed) -->
+        <div class="content-block">
+            <h3>Banner Ads (All Sizes)</h3>
+
+            <!-- PLACEHOLDER: Add banner info here -->
+            <p class="placeholder-text">
+                Itaque earum rerum hic tenetur a sapiente delectus. Professional banner ads in all standard sizes for display advertising:
+            </p>
+
+            <!-- PLACEHOLDER: Add banner gallery here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🖼️</div>
+                <div class="media-placeholder-text">Add Complete Banner Gallery Here</div>
+                <div class="media-placeholder-subtext">Visual gallery of all available banner sizes and variations</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Available Sizes & Formats</h4>
+            <ul class="styled-list">
+                <li><strong>Leaderboard:</strong> 728x90, 970x90, 970x250</li>
+                <li><strong>Skyscraper:</strong> 160x600, 120x600, 300x600</li>
+                <li><strong>Rectangle:</strong> 300x250, 336x280, 250x250</li>
+                <li><strong>Mobile:</strong> 320x50, 320x100, 300x50</li>
+                <li><strong>Square:</strong> 200x200, 250x250</li>
+                <li><strong>Half Page:</strong> 300x600</li>
+            </ul>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download All Banners (ZIP)</a>
+                <a href="#" class="btn-secondary">Access Editable Templates</a>
+            </div>
+        </div>
+
+        <!-- PROMOTIONAL GRAPHICS -->
+        <div class="content-block">
+            <h3>Promotional Graphics</h3>
+
+            <!-- PLACEHOLDER: Add graphics info here -->
+            <p class="placeholder-text">
+                Ut aut reiciendis voluptatibus maiores alias consequatur. Ready-to-use graphics for social media, blog posts, and email campaigns:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📱</div>
+                    <h5>Social Media Graphics</h5>
+                    <p>Optimized for Instagram, Facebook, Twitter, LinkedIn. Multiple variations available.</p>
+                    <a href="#" class="btn btn-small">Download</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📧</div>
+                    <h5>Email Header Images</h5>
+                    <p>Hero images for email campaigns. Various sizes and themes.</p>
+                    <a href="#" class="btn btn-small">Download</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📝</div>
+                    <h5>Blog Post Images</h5>
+                    <p>Featured images for blog articles and content marketing.</p>
+                    <a href="#" class="btn btn-small">Download</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🎯</div>
+                    <h5>CTA Buttons</h5>
+                    <p>Call-to-action button graphics in various sizes and styles.</p>
+                    <a href="#" class="btn btn-small">Download</a>
+                </div>
+            </div>
+
+            <!-- PLACEHOLDER: Add graphics gallery here -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🖼️</div>
+                <div class="media-placeholder-text">Add Promotional Graphics Gallery Here</div>
+                <div class="media-placeholder-subtext">Visual preview of available promotional graphics</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <a href="#" class="btn">Download All Graphics (ZIP)</a>
+        </div>
+
+        <!-- CUSTOM ASSETS -->
+        <div class="content-block">
+            <h3>Request Custom Assets</h3>
+
+            <!-- PLACEHOLDER: Add custom request info here -->
+            <p class="placeholder-text">
+                Aut perferendis doloribus asperiores repellat. Need custom creatives for a specific campaign? We can help high-performing affiliates with custom assets:
+            </p>
+
+            <div class="alert-box alert-box-success">
+                <h4>✨ Custom Asset Requests</h4>
+                <p>Affiliates driving $5,000+ in monthly sales can request custom banners, landing pages, or creative assets tailored to their campaigns. Contact our affiliate team to discuss your needs.</p>
+            </div>
+
+            <a href="mailto:affiliates@usebluestone.com" class="btn">Request Custom Assets</a>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 6: COMPLIANCE & GUIDELINES
+         ============================================ -->
+    <section id="compliance" class="content-section">
+        <div class="section-header">
+            <span class="section-number">6</span>
+            <h2>Compliance & Guidelines</h2>
+            <p>FTC disclosure requirements, brand usage rules, and prohibited marketing tactics you must follow.</p>
+        </div>
+
+        <!-- FTC DISCLOSURE -->
+        <div class="content-block">
+            <h3>FTC Disclosure Requirements</h3>
+
+            <!-- PLACEHOLDER: Add FTC info here -->
+            <p class="placeholder-text">
+                Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit. As an affiliate marketer, you are legally required to disclose your affiliate relationship with Bluestone. Here's how to stay compliant:
+            </p>
+
+            <h4>Where to Include Disclosures</h4>
+            <ul class="styled-list">
+                <li><strong>Blog Posts:</strong> Add disclosure at the top of the article, before the first affiliate link</li>
+                <li><strong>Email Marketing:</strong> Include disclosure near the top of the email, not just in footer</li>
+                <li><strong>Social Media:</strong> Use #ad, #affiliate, or "affiliate link" in your posts</li>
+                <li><strong>Video Content:</strong> Verbal disclosure + written disclosure in description</li>
+                <li><strong>Paid Ads:</strong> Clearly identify ads as sponsored or affiliate content</li>
+            </ul>
+
+            <h4>Compliant Disclosure Examples</h4>
+            <!-- PLACEHOLDER: Add disclosure examples here -->
+            <div class="code-box">
+                Blog Post Disclosure:<br>
+                "This post contains affiliate links. If you make a purchase through these links, I may earn a commission at no additional cost to you. I only recommend products I personally use and believe in."
+                <br><br>
+                Email Disclosure:<br>
+                "This email contains affiliate links. I may earn a commission if you make a purchase."
+                <br><br>
+                Social Media Disclosure:<br>
+                "#ad #affiliate - I earn a commission from purchases through my link"
+            </div>
+
+            <div class="alert-box">
+                <h4>⚠️ Legal Requirement</h4>
+                <p>Affiliate disclosure is not optional—it's required by law (FTC regulations). Failure to disclose can result in fines and legal action. Always err on the side of over-disclosure rather than under-disclosure.</p>
+            </div>
+
+            <div class="btn-group">
+                <a href="#" class="btn">Download FTC Compliance Guide (PDF)</a>
+                <a href="#" class="btn-secondary">View Disclosure Templates</a>
+            </div>
+        </div>
+
+        <!-- BRAND USAGE RULES -->
+        <div class="content-block">
+            <h3>Brand Usage Guidelines</h3>
+
+            <!-- PLACEHOLDER: Add brand guidelines here -->
+            <p class="placeholder-text">
+                Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse. When using Bluestone's brand, follow these guidelines:
+            </p>
+
+            <h4>Approved Brand Usage</h4>
+            <ul class="styled-list">
+                <li>Use official logos provided in this resource hub</li>
+                <li>Refer to the product as "Bluestone" (not "Blue Stone" or "BlueStone")</li>
+                <li>Use approved brand colors from our style guide</li>
+                <li>Maintain proper spacing around logos (minimum clearance guidelines in style guide)</li>
+                <li>Use high-resolution assets—never stretch or distort logos</li>
+            </ul>
+
+            <h4>Prohibited Brand Usage</h4>
+            <ul class="styled-list">
+                <li>❌ Don't alter, recolor, or modify official logos</li>
+                <li>❌ Don't create your own Bluestone graphics without approval</li>
+                <li>❌ Don't use Bluestone branding in a way that implies official partnership beyond affiliate relationship</li>
+                <li>❌ Don't use Bluestone name in your domain name without permission</li>
+                <li>❌ Don't bid on Bluestone branded keywords in paid search without approval</li>
+            </ul>
+
+            <a href="#" class="btn">Download Brand Guidelines (PDF)</a>
+        </div>
+
+        <!-- PROHIBITED TACTICS -->
+        <div class="content-block">
+            <h3>Prohibited Marketing Tactics</h3>
+
+            <!-- PLACEHOLDER: Add prohibited tactics here -->
+            <p class="placeholder-text">
+                Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet consectetur. To protect the Bluestone brand and maintain ethical marketing standards, the following tactics are strictly prohibited:
+            </p>
+
+            <div class="alert-box">
+                <h4>🚫 These Will Get You Removed from the Program</h4>
+                <p>Violation of these rules may result in immediate termination from the affiliate program and forfeiture of unpaid commissions.</p>
+            </div>
+
+            <h4>Absolutely Prohibited</h4>
+            <ul class="styled-list">
+                <li>❌ <strong>False Medical Claims:</strong> Never claim Bluestone cures, treats, or diagnoses mental health conditions</li>
+                <li>❌ <strong>Guaranteed Results:</strong> Don't promise specific outcomes or results from using Bluestone</li>
+                <li>❌ <strong>Spam:</strong> No unsolicited emails, messages, or comments promoting Bluestone</li>
+                <li>❌ <strong>Trademark Bidding:</strong> Don't bid on "Bluestone" or related branded terms in paid search without explicit permission</li>
+                <li>❌ <strong>Misleading Content:</strong> No fake reviews, testimonials, or fabricated success stories</li>
+                <li>❌ <strong>Cookie Stuffing:</strong> Any form of fraudulent cookie manipulation</li>
+                <li>❌ <strong>Incentivized Signups:</strong> Don't offer cash, gifts, or rewards for signups through your link</li>
+                <li>❌ <strong>Impersonation:</strong> Never imply you are Bluestone or an official representative</li>
+                <li>❌ <strong>Negative Marketing:</strong> No disparaging competitors unfairly or unprofessionally</li>
+                <li>❌ <strong>Adult/Illegal Content:</strong> Don't promote Bluestone on adult, illegal, or offensive content sites</li>
+            </ul>
+
+            <h4>Requires Approval</h4>
+            <ul class="styled-list">
+                <li>⚠️ Bidding on Bluestone branded keywords</li>
+                <li>⚠️ Creating dedicated Bluestone review sites</li>
+                <li>⚠️ Using Bluestone branding in domain names</li>
+                <li>⚠️ Representing yourself as an official Bluestone partner</li>
+                <li>⚠️ Creating custom landing pages with Bluestone branding</li>
+            </ul>
+
+            <p class="placeholder-text">If you're unsure whether a tactic is allowed, email our affiliate team before proceeding.</p>
+        </div>
+
+        <!-- MEDICAL/HEALTH CLAIMS -->
+        <div class="content-block">
+            <h3>Mental Health Claims Guidelines</h3>
+
+            <!-- PLACEHOLDER: Add health claims guidelines here -->
+            <p class="placeholder-text">
+                Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis. Because Bluestone operates in the mental health space, extra care is required with claims and language:
+            </p>
+
+            <h4>✅ Acceptable Language</h4>
+            <div class="code-box">
+                ✓ "Bluestone provides mental health support"<br>
+                ✓ "AI-powered chatbot for emotional wellness"<br>
+                ✓ "Accessible mental health resource"<br>
+                ✓ "Complement to traditional therapy"<br>
+                ✓ "Tool for managing stress and anxiety"
+            </div>
+
+            <h4>❌ Prohibited Language</h4>
+            <div class="code-box">
+                ✗ "Bluestone cures depression"<br>
+                ✗ "Replaces the need for therapy"<br>
+                ✗ "Guaranteed to fix anxiety"<br>
+                ✗ "Medical-grade mental health treatment"<br>
+                ✗ "Diagnoses mental health conditions"
+            </div>
+
+            <div class="alert-box">
+                <h4>💙 Remember: Mental Health is Serious</h4>
+                <p>When marketing mental health products, we have a responsibility to be ethical and accurate. Always position Bluestone as a supportive tool, not a replacement for professional medical care. Include crisis resources when discussing serious mental health topics.</p>
+            </div>
+        </div>
+
+        <!-- MONITORING & ENFORCEMENT -->
+        <div class="content-block">
+            <h3>Monitoring & Enforcement</h3>
+
+            <!-- PLACEHOLDER: Add monitoring info here -->
+            <p class="placeholder-text">
+                Duis aute irure dolor in reprehenderit in voluptate velit esse. We monitor affiliate marketing activities to ensure compliance:
+            </p>
+
+            <ul class="styled-list">
+                <li>Regular audits of affiliate marketing materials and campaigns</li>
+                <li>Automated monitoring of branded keyword bidding</li>
+                <li>Review of high-traffic affiliate content</li>
+                <li>User reports of questionable affiliate marketing</li>
+            </ul>
+
+            <h4>Violation Consequences</h4>
+            <p class="placeholder-text">Violations may result in:</p>
+            <ul class="styled-list">
+                <li><strong>Warning:</strong> First-time minor violations receive a warning with opportunity to correct</li>
+                <li><strong>Temporary Suspension:</strong> Serious or repeat violations may result in temporary suspension</li>
+                <li><strong>Permanent Ban:</strong> Fraudulent activity or egregious violations result in immediate permanent removal</li>
+                <li><strong>Commission Forfeiture:</strong> Unpaid commissions may be forfeited for terms violations</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- ============================================
+         SECTION 7: SUPPORT & RESOURCES
+         ============================================ -->
+    <section id="support" class="content-section">
+        <div class="section-header">
+            <span class="section-number">7</span>
+            <h2>Support & Resources</h2>
+            <p>Get help when you need it, access performance tips, and find answers to common affiliate questions.</p>
+        </div>
+
+        <!-- CONTACT INFO -->
+        <div class="content-block">
+            <h3>How to Get Support</h3>
+
+            <!-- PLACEHOLDER: Add support info here -->
+            <p class="placeholder-text">
+                Excepteur sint occaecat cupidatat non proident. Our affiliate team is here to help you succeed. Here's how to reach us:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">📧</div>
+                    <h5>General Affiliate Support</h5>
+                    <!-- PLACEHOLDER: Update email -->
+                    <p><strong>Email:</strong> affiliates@usebluestone.com</p>
+                    <p>For questions, custom asset requests, and general inquiries. Response within 24 hours.</p>
+                    <a href="mailto:affiliates@usebluestone.com" class="btn btn-small">Send Email</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⚙️</div>
+                    <h5>Technical/Tracking Issues</h5>
+                    <!-- PLACEHOLDER: Update email -->
+                    <p><strong>Email:</strong> support@usebluestone.com</p>
+                    <p>For problems with tracking, dashboard access, or technical difficulties.</p>
+                    <a href="mailto:support@usebluestone.com" class="btn btn-small">Get Technical Help</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💰</div>
+                    <h5>Payment Questions</h5>
+                    <!-- PLACEHOLDER: Update email -->
+                    <p><strong>Email:</strong> payments@usebluestone.com</p>
+                    <p>For questions about commissions, payouts, or payment methods.</p>
+                    <a href="mailto:payments@usebluestone.com" class="btn btn-small">Contact Payments</a>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🤝</div>
+                    <h5>Partnership Opportunities</h5>
+                    <!-- PLACEHOLDER: Update email -->
+                    <p><strong>Email:</strong> partnerships@usebluestone.com</p>
+                    <p>For high-volume affiliates interested in custom deals or larger partnerships.</p>
+                    <a href="mailto:partnerships@usebluestone.com" class="btn btn-small">Discuss Partnership</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- PERFORMANCE TIPS -->
+        <div class="content-block">
+            <h3>Performance Optimization Tips</h3>
+
+            <!-- PLACEHOLDER: Add performance tips here -->
+            <p class="placeholder-text">
+                Sunt in culpa qui officia deserunt mollitia animi. Maximize your affiliate earnings with these proven strategies:
+            </p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">🎯</div>
+                    <h5>Focus on High-Intent Traffic</h5>
+                    <p>Target people actively searching for mental health solutions, not just general wellness audiences.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">📊</div>
+                    <h5>Track Everything</h5>
+                    <p>Use UTM parameters and campaign-specific links to identify your best-performing channels.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h5>Pre-Sell, Don't Hard Sell</h5>
+                    <p>Educate about mental health and build trust before pushing the product.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🔄</div>
+                    <h5>Follow Up</h5>
+                    <p>Most conversions don't happen on first touchpoint. Use email sequences and retargeting.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">⚡</div>
+                    <h5>Leverage Free Trial</h5>
+                    <p>Emphasize that users can try Bluestone free—removes friction from signup decision.</p>
+                </div>
+
+                <div class="resource-card">
+                    <div class="resource-icon">🧪</div>
+                    <h5>Test Continuously</h5>
+                    <p>A/B test ad copy, landing pages, email subject lines. Small improvements compound over time.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- FAQ -->
+        <div class="content-block">
+            <h3>Frequently Asked Questions</h3>
+
+            <!-- PLACEHOLDER: Add FAQs here -->
+            <p class="placeholder-text">
+                Et harum quidem rerum facilis est et expedita distinctio. Quick answers to common affiliate marketer questions:
+            </p>
+
+            <h4>Commission & Payments</h4>
+            <!-- PLACEHOLDER: Add commission FAQs -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">💰</div>
+                <div class="media-placeholder-text">Add Commission FAQs Here</div>
+                <div class="media-placeholder-subtext">Q&A about commission rates, payment schedule, minimum payout</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Tracking & Attribution</h4>
+            <!-- PLACEHOLDER: Add tracking FAQs -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">🔗</div>
+                <div class="media-placeholder-text">Add Tracking FAQs Here</div>
+                <div class="media-placeholder-subtext">Q&A about cookie duration, attribution model, tracking issues</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <h4>Marketing Guidelines</h4>
+            <!-- PLACEHOLDER: Add marketing FAQs -->
+            <div class="media-placeholder">
+                <div class="media-placeholder-icon">📋</div>
+                <div class="media-placeholder-text">Add Marketing FAQs Here</div>
+                <div class="media-placeholder-subtext">Q&A about allowed tactics, brand bidding, content approval</div>
+            </div>
+            <!-- END PLACEHOLDER -->
+
+            <div class="btn-group">
+                <a href="#" class="btn">View Complete FAQ (Google Doc)</a>
+                <a href="#" class="btn-secondary">Search Knowledge Base</a>
+            </div>
+        </div>
+
+        <!-- ADDITIONAL RESOURCES -->
+        <div class="content-block">
+            <h3>Additional Resources</h3>
+
+            <!-- PLACEHOLDER: Add additional resources here -->
+            <p class="placeholder-text">
+                Nam libero tempore, cum soluta nobis est eligendi optio. Helpful links and resources for affiliate marketers:
+            </p>
+
+            <ul class="styled-list">
+                <li><a href="#" style="color: var(--primary-blue); text-decoration: underline;">Rewardful Dashboard</a> - Track your performance and earnings</li>
+                <li><a href="#" style="color: var(--primary-blue); text-decoration: underline;">Bluestone Product Roadmap</a> - See what features are coming soon</li>
+                <li><a href="#" style="color: var(--primary-blue); text-decoration: underline;">Affiliate Webinar Recordings</a> - Training sessions and strategy workshops</li>
+                <li><a href="#" style="color: var(--primary-blue); text-decoration: underline;">Conversion Rate Data</a> - Benchmark data to inform your campaigns</li>
+                <li><a href="#" style="color: var(--primary-blue); text-decoration: underline;">Competitor Analysis</a> - How Bluestone compares to alternatives</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-main">
+                <div class="footer-section">
+                    <h3>Affiliate Support</h3>
+                    <p>Questions about the program or need custom assets?</p>
+                    <p><strong>Email:</strong> <a href="mailto:affiliates@usebluestone.com">affiliates@usebluestone.com</a></p>
+                    <p>Our team responds within 24 hours.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Back to Home</a>
+                    <a href="influencers.html">Influencer Resources</a>
+                    <a href="https://usebluestone.com" target="_blank">Bluestone Website</a>
+                    <a href="https://rewardful.com" target="_blank">Rewardful Dashboard</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#getting-started">Getting Started</a>
+                    <a href="#paid-ads">Ad Templates</a>
+                    <a href="#email-marketing">Email Templates</a>
+                    <a href="#compliance">Compliance Guidelines</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>About Bluestone</h3>
+                    <p>AI-powered mental health chatbot providing accessible, affordable support 24/7.</p>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-bottom-links">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Affiliate Agreement</a>
+                    <a href="#">FTC Compliance</a>
+                </div>
+                <p class="copyright">&copy; 2025 Bluestone. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#') {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
