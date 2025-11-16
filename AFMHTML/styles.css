@@ -1,0 +1,557 @@
+/* ============================================
+   BLUESTONE AFFILIATE RESOURCE HUB STYLES
+   ============================================ */
+
+/* ============================================
+   CSS CUSTOM PROPERTIES
+   ============================================ */
+:root {
+    /* Brand Colors */
+    --primary-blue: #2563EB;
+    --dark-blue: #1E40AF;
+
+    /* Text Colors */
+    --text-dark: #0f172a;
+    --text-medium: #64748b;
+    --text-light: #94a3b8;
+
+    /* Background Colors */
+    --bg-white: #FFFFFF;
+    --bg-light: #F8FAFC;
+
+    /* UI Colors */
+    --border-color: #e2e8f0;
+    --success-green: #10B981;
+    --icon-bg-light: #EFF6FF;
+
+    /* Shadows */
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+    --shadow-md: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
+}
+
+/* ============================================
+   GLOBAL STYLES & RESET
+   ============================================ */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.7;
+    color: var(--text-medium);
+    background-color: var(--bg-white);
+    overflow-x: hidden;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* ============================================
+   TYPOGRAPHY
+   ============================================ */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inter', sans-serif;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+h2, h3 {
+    font-weight: 700;
+}
+
+h4, h5, h6 {
+    font-weight: 600;
+}
+
+p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: var(--text-medium);
+}
+
+.small-text {
+    font-size: 14px;
+    color: var(--text-light);
+}
+
+/* ============================================
+   REUSABLE UTILITY CLASSES
+   ============================================ */
+
+/* Buttons */
+.btn-primary,
+.btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: var(--primary-blue);
+    color: var(--bg-white);
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.2s ease;
+    border: none;
+    box-shadow: var(--shadow-sm);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+}
+
+.btn-primary:hover,
+.btn:hover {
+    background: var(--dark-blue);
+}
+
+.btn-secondary {
+    background: transparent;
+    color: var(--primary-blue);
+    border: 2px solid var(--primary-blue);
+    box-shadow: none;
+}
+
+.btn-secondary:hover {
+    background: var(--primary-blue);
+    color: var(--bg-white);
+}
+
+/* Cards */
+.card {
+    background: var(--bg-white);
+    border-radius: 12px;
+    padding: 2rem;
+    border: none;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+/* Sections */
+.section {
+    padding: 5rem 2rem;
+}
+
+.section-light {
+    background: var(--bg-light);
+}
+
+.section-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Video Player */
+.video-player {
+    max-width: 640px;
+    width: 100%;
+    margin: 20px auto;
+    display: block;
+    border-radius: 8px;
+    padding: 0 20px;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.nav-header {
+    background-color: var(--text-dark);
+    padding: 1rem 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--bg-white);
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-links a {
+    color: var(--bg-white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: opacity 0.3s ease;
+    opacity: 0.9;
+    font-family: 'Inter', sans-serif;
+}
+
+.nav-links a:hover {
+    opacity: 1;
+}
+
+.social-icons {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: all 0.2s ease;
+    opacity: 0.9;
+}
+
+.social-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.social-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #FFFFFF;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+    background: var(--bg-light);
+    color: var(--text-dark);
+    padding: 5rem 2rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 48px;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: -1px;
+    color: var(--text-dark);
+}
+
+.hero p {
+    font-size: 16px;
+    margin-bottom: 3rem;
+    line-height: 1.7;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--text-medium);
+}
+
+/* ============================================
+   CTA CARDS
+   ============================================ */
+.cta-section {
+    max-width: 1200px;
+    margin: -4rem auto 5rem;
+    padding: 0 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 10;
+    background: transparent;
+}
+
+.cta-card {
+    background: var(--bg-white);
+    border-radius: 12px;
+    padding: 2rem;
+    border: none;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.cta-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.cta-card-icon {
+    width: 48px;
+    height: 48px;
+    margin: 0 auto 1.5rem;
+    background: var(--icon-bg-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.cta-card h2 {
+    font-size: 24px;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.cta-card p {
+    color: var(--text-medium);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* ============================================
+   COMMUNITY SECTION
+   ============================================ */
+.community-section {
+    background: var(--bg-light);
+    padding: 5rem 2rem;
+}
+
+.community-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.community-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.community-header h2 {
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.community-header p {
+    font-size: 18px;
+    color: var(--text-medium);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.community-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.community-card {
+    background: var(--bg-white);
+    border-radius: 12px;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-md);
+    transition: all 0.3s ease;
+}
+
+.community-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+}
+
+.community-icon {
+    width: 64px;
+    height: 64px;
+    margin: 0 auto 1.5rem;
+}
+
+.community-icon svg {
+    width: 100%;
+    height: 100%;
+}
+
+.community-card h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.community-card p {
+    font-size: 16px;
+    color: var(--text-medium);
+    line-height: 1.7;
+    margin-bottom: 2rem;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+    background: var(--text-dark);
+    color: var(--bg-white);
+    padding: 3rem 2rem;
+    margin-top: 5rem;
+    border-top: 1px solid #1e293b;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.footer-section h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+    color: var(--bg-white);
+}
+
+.footer-section p,
+.footer-section a {
+    color: var(--text-light);
+    line-height: 1.8;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.75rem;
+}
+
+.footer-section a:hover {
+    color: var(--bg-white);
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.footer-bottom-links {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-bottom a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.95rem;
+}
+
+.footer-bottom a:hover {
+    color: var(--bg-white);
+}
+
+.copyright {
+    color: var(--text-medium);
+    font-size: 14px;
+}
+
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
+@media (max-width: 768px) {
+    .hero {
+        padding: 4rem 2rem;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .cta-section {
+        margin-top: -3rem;
+        gap: 1.5rem;
+    }
+
+    .cta-card {
+        padding: 2rem;
+    }
+
+    .cta-card h2 {
+        font-size: 20px;
+    }
+
+    .community-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .community-section {
+        padding: 3rem 2rem;
+    }
+
+    .community-header h2 {
+        font-size: 28px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .footer-main {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero {
+        padding: 3rem 1.5rem;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .cta-card h2 {
+        font-size: 18px;
+    }
+
+    .cta-section {
+        grid-template-columns: 1fr;
+    }
+
+    .community-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .community-header h2 {
+        font-size: 24px;
+    }
+
+    .community-card h3 {
+        font-size: 20px;
+    }
+}

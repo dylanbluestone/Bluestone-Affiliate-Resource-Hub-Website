@@ -16,22 +16,16 @@
         }
 
         :root {
-            /* Bluestone Wellness Brand Colors */
+            /* Bluestone Brand Colors - Updated */
             --primary-blue: #2563EB;
             --primary-blue-dark: #1E40AF;
-            --secondary-blue: #3B82F6;
-            --accent-green: #1DB954;
-            --near-black: #1a1a1a;
-            --dark-surface: #1E293B;
-            --dark-surface-elevated: #334155;
-            --soft-cream: #F9F7F4;
-            --warm-white: #FFFFFF;
-            --text-dark: #1a1a1a;
-            --text-medium: #374151;
-            --text-light: #6B7280;
-            --border-light: #E5E7EB;
+            --white: #FFFFFF;
+            --light-gray: #F8FAFC;
+            --dark-text: #0f172a;
+            --text-medium: #64748b;
+            --border: #e2e8f0;
             --success-green: #10B981;
-            --shadow: rgba(0, 0, 0, 0.08);
+            --shadow: rgba(0, 0, 0, 0.1);
         }
 
         html {
@@ -40,10 +34,12 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            line-height: 1.6;
-            color: var(--text-dark);
-            background-color: #f5f5f5;
+            line-height: 1.7;
+            color: var(--text-medium);
+            background-color: var(--white);
+            overflow-x: hidden;
             font-weight: 400;
+            font-size: 16px;
         }
 
         /* ============================================
@@ -71,6 +67,14 @@
 
         p {
             font-weight: 400;
+            font-size: 16px;
+            line-height: 1.7;
+            color: var(--text-medium);
+        }
+
+        .small-text {
+            font-size: 14px;
+            color: #94a3b8;
         }
 
         button, .btn, .nav-links a {
@@ -81,9 +85,9 @@
            NAVIGATION
            ============================================ */
         .nav-header {
-            background-color: var(--warm-white);
-            padding: 1.5rem 2rem;
-            box-shadow: 0 2px 8px var(--shadow);
+            background-color: var(--dark-text);
+            padding: 1rem 1.5rem;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -102,7 +106,7 @@
         .logo {
             font-size: 1.75rem;
             font-weight: 700;
-            color: var(--primary-blue);
+            color: var(--white);
             text-decoration: none;
         }
 
@@ -114,26 +118,27 @@
         }
 
         .nav-links a {
-            color: var(--text-medium);
+            color: var(--white);
             text-decoration: none;
             font-weight: 500;
             font-size: 0.95rem;
-            transition: color 0.3s ease;
+            transition: opacity 0.3s ease;
+            opacity: 0.9;
         }
 
         .nav-links a:hover {
-            color: var(--primary-blue);
+            opacity: 1;
         }
 
         .btn-switch {
             background: var(--primary-blue);
-            color: var(--warm-white);
+            color: var(--white);
             padding: 0.5rem 1.25rem;
             border-radius: 6px;
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .btn-switch:hover {
@@ -157,7 +162,7 @@
         }
 
         .page-header h1 {
-            font-size: 3rem;
+            font-size: 48px;
             font-weight: 800;
             margin-bottom: 1rem;
             line-height: 1.2;
@@ -165,9 +170,9 @@
         }
 
         .page-header p {
-            font-size: 1.2rem;
+            font-size: 16px;
             opacity: 0.95;
-            line-height: 1.8;
+            line-height: 1.7;
             color: #FFFFFF;
         }
 
@@ -175,11 +180,11 @@
            SECTION NAVIGATION
            ============================================ */
         .section-nav {
-            background: var(--warm-white);
+            background: var(--white);
             padding: 1.5rem 2rem;
-            box-shadow: 0 2px 8px var(--shadow);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
             position: sticky;
-            top: 80px;
+            top: 64px;
             z-index: 999;
         }
 
@@ -203,7 +208,7 @@
         }
 
         .section-nav a:hover {
-            background: var(--soft-cream);
+            background: var(--light-gray);
             color: var(--primary-blue);
         }
 
@@ -217,7 +222,7 @@
         }
 
         .content-section:nth-child(even) {
-            background: var(--warm-white);
+            background: var(--light-gray);
         }
 
         .section-header {
@@ -228,7 +233,7 @@
         .section-number {
             display: inline-block;
             background: var(--primary-blue);
-            color: var(--warm-white);
+            color: var(--white);
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -238,58 +243,65 @@
         }
 
         .section-header h2 {
-            font-size: 2.5rem;
-            color: var(--text-dark);
+            font-size: 36px;
+            color: var(--dark-text);
             margin-bottom: 1rem;
             font-weight: 700;
         }
 
         .section-header p {
-            font-size: 1.15rem;
+            font-size: 16px;
             color: var(--text-medium);
             max-width: 800px;
             margin: 0 auto;
-            line-height: 1.8;
+            line-height: 1.7;
         }
 
         /* Content Blocks */
         .content-block {
-            background: var(--warm-white);
-            padding: 3rem;
+            background: var(--white);
+            padding: 2rem;
             border-radius: 12px;
             margin-bottom: 2.5rem;
-            box-shadow: 0 4px 12px var(--shadow);
+            border: none;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
+        }
+
+        .content-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
         }
 
         .content-section:nth-child(even) .content-block {
-            background: var(--soft-cream);
+            background: var(--white);
         }
 
         .content-block h3 {
-            font-size: 1.75rem;
-            color: var(--text-dark);
+            font-size: 24px;
+            color: var(--dark-text);
             margin-bottom: 1.5rem;
-            font-weight: 600;
+            font-weight: 700;
         }
 
         .content-block h4 {
             font-size: 1.3rem;
-            color: var(--primary-blue);
+            color: #2563EB;
             margin: 2rem 0 1rem;
             font-weight: 600;
         }
 
         .placeholder-text {
             color: var(--text-medium);
-            line-height: 1.8;
+            line-height: 1.7;
             margin-bottom: 1.5rem;
-            font-size: 1.05rem;
+            font-size: 16px;
         }
 
         /* Media Placeholders */
         .media-placeholder {
-            background: var(--border-light);
-            border: 3px dashed var(--text-light);
+            background: var(--light-gray);
+            border: 3px dashed var(--border);
             border-radius: 12px;
             padding: 4rem 2rem;
             text-align: center;
@@ -308,13 +320,13 @@
         }
 
         .media-placeholder-text {
-            color: var(--text-light);
+            color: var(--text-medium);
             font-size: 1.1rem;
             font-weight: 600;
         }
 
         .media-placeholder-subtext {
-            color: var(--text-light);
+            color: var(--text-medium);
             font-size: 0.9rem;
             margin-top: 0.5rem;
         }
@@ -328,21 +340,21 @@
         }
 
         .resource-card {
-            background: linear-gradient(135deg, var(--soft-cream), var(--warm-white));
+            background: var(--white);
             padding: 2rem;
-            border-radius: 10px;
-            border: 2px solid var(--border-light);
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
             transition: all 0.3s ease;
         }
 
         .content-section:nth-child(even) .resource-card {
-            background: linear-gradient(135deg, var(--warm-white), var(--soft-cream));
+            background: var(--white);
         }
 
         .resource-card:hover {
-            border-color: var(--primary-blue);
-            transform: translateY(-4px);
-            box-shadow: 0 8px 16px var(--shadow);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
         }
 
         .resource-icon {
@@ -352,7 +364,7 @@
 
         .resource-card h5 {
             font-size: 1.25rem;
-            color: var(--text-dark);
+            color: var(--dark-text);
             margin-bottom: 1rem;
             font-weight: 600;
         }
@@ -366,37 +378,37 @@
         /* Buttons */
         .btn {
             display: inline-block;
-            padding: 1rem 2rem;
+            padding: 14px 28px;
             background: var(--primary-blue);
-            color: var(--warm-white);
+            color: var(--white);
             text-decoration: none;
             border-radius: 8px;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             border: none;
             cursor: pointer;
             font-size: 1rem;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
         }
 
         .btn:hover {
             background: var(--primary-blue-dark);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(74, 123, 167, 0.3);
         }
 
         .btn-secondary {
             background: transparent;
             color: var(--primary-blue);
             border: 2px solid var(--primary-blue);
+            box-shadow: none;
         }
 
         .btn-secondary:hover {
             background: var(--primary-blue);
-            color: var(--warm-white);
+            color: var(--white);
         }
 
         .btn-small {
-            padding: 0.75rem 1.5rem;
+            padding: 14px 28px;
             font-size: 0.95rem;
         }
 
@@ -445,13 +457,20 @@
         .platform-item {
             text-align: center;
             padding: 2rem;
-            background: var(--soft-cream);
-            border-radius: 10px;
-            border: 2px solid var(--border-light);
+            background: var(--white);
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 1px 2px rgba(0,0,0,0.06);
+            transition: all 0.3s ease;
         }
 
         .content-section:nth-child(even) .platform-item {
-            background: var(--warm-white);
+            background: var(--white);
+        }
+
+        .platform-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
         }
 
         .platform-icon {
@@ -461,17 +480,18 @@
 
         .platform-item h4 {
             margin: 1rem 0;
-            color: var(--text-dark);
+            color: var(--dark-text);
         }
 
         /* ============================================
            FOOTER
            ============================================ */
         .footer {
-            background: var(--text-dark);
-            color: var(--warm-white);
-            padding: 4rem 2rem 2rem;
+            background: #0f172a;
+            color: #FFFFFF;
+            padding: 3rem 2rem;
             margin-top: 0;
+            border-top: 1px solid #1e293b;
         }
 
         .footer-content {
@@ -490,11 +510,12 @@
             font-size: 1.25rem;
             margin-bottom: 1.5rem;
             font-weight: 600;
+            color: #FFFFFF;
         }
 
         .footer-section p,
         .footer-section a {
-            color: var(--text-light);
+            color: #94a3b8;
             line-height: 1.8;
             text-decoration: none;
             display: block;
@@ -502,7 +523,7 @@
         }
 
         .footer-section a:hover {
-            color: var(--warm-white);
+            color: #FFFFFF;
         }
 
         .footer-bottom {
@@ -520,18 +541,18 @@
         }
 
         .footer-bottom a {
-            color: var(--text-light);
+            color: #94a3b8;
             text-decoration: none;
             font-size: 0.95rem;
         }
 
         .footer-bottom a:hover {
-            color: var(--warm-white);
+            color: #FFFFFF;
         }
 
         .copyright {
-            color: var(--text-light);
-            font-size: 0.9rem;
+            color: #64748b;
+            font-size: 14px;
         }
 
         /* ============================================
@@ -539,15 +560,19 @@
            ============================================ */
         @media (max-width: 768px) {
             .page-header h1 {
-                font-size: 2.25rem;
+                font-size: 36px;
             }
 
             .section-header h2 {
-                font-size: 2rem;
+                font-size: 28px;
             }
 
             .content-block {
                 padding: 2rem;
+            }
+
+            .content-section {
+                padding: 3rem 2rem;
             }
 
             .section-nav {
@@ -570,7 +595,15 @@
             }
 
             .page-header h1 {
-                font-size: 1.85rem;
+                font-size: 32px;
+            }
+
+            .section-header h2 {
+                font-size: 24px;
+            }
+
+            .content-block h3 {
+                font-size: 20px;
             }
 
             .content-section {
@@ -1894,6 +1927,12 @@ If you or someone you know is in crisis:
                     <a href="marketers.html">Marketer Resources</a>
                     <a href="https://usebluestone.com" target="_blank">Bluestone Website</a>
                     <a href="https://rewardful.com" target="_blank">Rewardful Dashboard</a>
+                </div>
+
+                <div class="footer-section">
+                    <h3>Community</h3>
+                    <a href="https://discord.gg/HhUM648f" target="_blank" rel="noopener noreferrer">Join Discord</a>
+                    <a href="https://chat.whatsapp.com/LqFzazqYI9K0mExjVemFFT" target="_blank" rel="noopener noreferrer">Join WhatsApp</a>
                 </div>
 
                 <div class="footer-section">
