@@ -5,146 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resources for Affiliate Marketers | Bluestone</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
     <style>
+        /* Page-Specific Styles */
+
         /* ============================================
-           GLOBAL STYLES & RESET
+           PAGE BACKGROUND
            ============================================ */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            /* Bluestone Brand Colors - Updated */
-            --primary-blue: #2563EB;
-            --primary-blue-dark: #1E40AF;
-            --white: #FFFFFF;
-            --light-gray: #F8FAFC;
-            --dark-text: #0f172a;
-            --text-medium: #64748b;
-            --border: #e2e8f0;
-            --success-green: #10B981;
-            --warning-yellow: #F4B942;
-            --shadow: rgba(0, 0, 0, 0.1);
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
         body {
-            font-family: 'Inter', sans-serif;
-            line-height: 1.7;
-            color: var(--text-medium);
-            background-color: var(--white);
-            overflow-x: hidden;
-            font-weight: 400;
-            font-size: 16px;
-        }
-
-        /* ============================================
-           TYPOGRAPHY - INTER FONT
-           ============================================ */
-        h1, h2, h3, h4, h5, h6 {
-            font-family: 'Inter', sans-serif;
-        }
-
-        h1 {
-            font-weight: 800;
-        }
-
-        h2, h3 {
-            font-weight: 700;
-        }
-
-        h4, h5 {
-            font-weight: 600;
-        }
-
-        h6 {
-            font-weight: 600;
-        }
-
-        p {
-            font-weight: 400;
-            font-size: 16px;
-            line-height: 1.7;
-            color: var(--text-medium);
-        }
-
-        .small-text {
-            font-size: 14px;
-            color: #94a3b8;
-        }
-
-        button, .btn, .nav-links a {
-            font-family: 'Inter', sans-serif;
-        }
-
-        /* ============================================
-           NAVIGATION
-           ============================================ */
-        .nav-header {
-            background-color: var(--dark-text);
-            padding: 1rem 1.5rem;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-
-        .nav-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-
-        .logo {
-            font-size: 1.75rem;
-            font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.5rem;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .nav-links a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.95rem;
-            transition: opacity 0.3s ease;
-            opacity: 0.9;
-        }
-
-        .nav-links a:hover {
-            opacity: 1;
-        }
-
-        .btn-switch {
-            background: var(--primary-blue);
-            color: var(--white);
-            padding: 0.5rem 1.25rem;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.9rem;
-            transition: all 0.2s ease;
-        }
-
-        .btn-switch:hover {
-            background: var(--primary-blue-dark);
-            transform: translateY(-2px);
+            background-color: #F8FAFC;
         }
 
         /* ============================================
@@ -178,42 +47,6 @@
         }
 
         /* ============================================
-           SECTION NAVIGATION
-           ============================================ */
-        .section-nav {
-            background: var(--white);
-            padding: 1.5rem 2rem;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
-            position: sticky;
-            top: 64px;
-            z-index: 999;
-        }
-
-        .section-nav-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: flex;
-            gap: 1.5rem;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-
-        .section-nav a {
-            color: var(--text-medium);
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            transition: all 0.3s ease;
-        }
-
-        .section-nav a:hover {
-            background: var(--light-gray);
-            color: var(--primary-blue);
-        }
-
-        /* ============================================
            CONTENT SECTIONS
            ============================================ */
         .content-section {
@@ -234,7 +67,7 @@
         .section-number {
             display: inline-block;
             background: var(--primary-blue);
-            color: var(--white);
+            color: #FFFFFF;
             width: 40px;
             height: 40px;
             border-radius: 50%;
@@ -260,7 +93,7 @@
 
         /* Content Blocks */
         .content-block {
-            background: var(--white);
+            background: #FFFFFF;
             padding: 2rem;
             border-radius: 12px;
             margin-bottom: 2.5rem;
@@ -275,7 +108,7 @@
         }
 
         .content-section:nth-child(even) .content-block {
-            background: var(--light-gray);
+            background: #FFFFFF;
         }
 
         .content-block h3 {
@@ -390,6 +223,11 @@
             border-left-color: var(--success-green);
         }
 
+        .alert-box-warning {
+            background: #FEF3C7;
+            border-left-color: #F4B942;
+        }
+
         .alert-box h4 {
             color: var(--dark-text);
             margin: 0 0 0.75rem 0;
@@ -400,50 +238,6 @@
             color: var(--text-medium);
             margin: 0;
             line-height: 1.7;
-        }
-
-        /* Buttons */
-        .btn {
-            display: inline-block;
-            padding: 14px 28px;
-            background: var(--primary-blue);
-            color: var(--white);
-            text-decoration: none;
-            border-radius: 8px;
-            font-weight: 600;
-            transition: all 0.2s ease;
-            border: none;
-            cursor: pointer;
-            font-size: 1rem;
-            box-shadow: 0 1px 2px rgba(0,0,0,0.05);
-        }
-
-        .btn:hover {
-            background: var(--primary-blue-dark);
-        }
-
-        .btn-secondary {
-            background: transparent;
-            color: var(--primary-blue);
-            border: 2px solid var(--primary-blue);
-            box-shadow: none;
-        }
-
-        .btn-secondary:hover {
-            background: var(--primary-blue);
-            color: var(--white);
-        }
-
-        .btn-small {
-            padding: 14px 28px;
-            font-size: 0.95rem;
-        }
-
-        .btn-group {
-            display: flex;
-            gap: 1rem;
-            flex-wrap: wrap;
-            margin-top: 1.5rem;
         }
 
         /* Lists */
@@ -483,82 +277,11 @@
             font-family: 'Courier New', monospace;
             margin: 1.5rem 0;
             overflow-x: auto;
+            white-space: pre-wrap;
         }
 
         /* ============================================
-           FOOTER
-           ============================================ */
-        .footer {
-            background: #0f172a;
-            color: #FFFFFF;
-            padding: 3rem 2rem;
-            margin-top: 0;
-            border-top: 1px solid #1e293b;
-        }
-
-        .footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .footer-main {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 3rem;
-            margin-bottom: 3rem;
-        }
-
-        .footer-section h3 {
-            font-size: 1.25rem;
-            margin-bottom: 1.5rem;
-            font-weight: 600;
-            color: #FFFFFF;
-        }
-
-        .footer-section p,
-        .footer-section a {
-            color: #94a3b8;
-            line-height: 1.8;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.75rem;
-        }
-
-        .footer-section a:hover {
-            color: #FFFFFF;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            text-align: center;
-        }
-
-        .footer-bottom-links {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 1rem 2rem;
-            margin-bottom: 1rem;
-        }
-
-        .footer-bottom a {
-            color: #94a3b8;
-            text-decoration: none;
-            font-size: 0.95rem;
-        }
-
-        .footer-bottom a:hover {
-            color: #FFFFFF;
-        }
-
-        .copyright {
-            color: #64748b;
-            font-size: 14px;
-        }
-
-        /* ============================================
-           RESPONSIVE DESIGN
+           RESPONSIVE DESIGN (PAGE-SPECIFIC)
            ============================================ */
         @media (max-width: 768px) {
             .page-header h1 {
@@ -575,14 +298,6 @@
 
             .content-section {
                 padding: 3rem 2rem;
-            }
-
-            .section-nav {
-                top: 70px;
-            }
-
-            .section-nav-content {
-                gap: 0.75rem;
             }
 
             .media-placeholder {
@@ -615,22 +330,40 @@
             .resource-grid {
                 grid-template-columns: 1fr;
             }
+
+            .btn-group {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- NAVIGATION -->
+    <!-- ==================== NAVIGATION ==================== -->
     <nav class="nav-header">
         <div class="nav-content">
-            <a href="index.html" class="logo">Bluestone</a>
+            <a href="index.html" class="logo">
+                <img src="logo.png" alt="Bluestone Logo">
+                <span>Bluestone</span>
+            </a>
             <div class="nav-links">
-                <a href="index.html">← Back to Home</a>
-                <a href="influencers.html" class="btn-switch">Switch to Influencer Resources</a>
+                <span class="community-text">Join the Community</span>
+                <div class="social-icons">
+                <a href="https://discord.gg/HhUM648f" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Join our Discord">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.14 96.36">
+                        <path d="M107.7,8.07A105.15,105.15,0,0,0,81.47,0a72.06,72.06,0,0,0-3.36,6.83A97.68,97.68,0,0,0,49,6.83,72.37,72.37,0,0,0,45.64,0,105.89,105.89,0,0,0,19.39,8.09C2.79,32.65-1.71,56.6.54,80.21h0A105.73,105.73,0,0,0,32.71,96.36,77.7,77.7,0,0,0,39.6,85.25a68.42,68.42,0,0,1-10.85-5.18c.91-.66,1.8-1.34,2.66-2a75.57,75.57,0,0,0,64.32,0c.87.71,1.76,1.39,2.66,2a68.68,68.68,0,0,1-10.87,5.19,77,77,0,0,0,6.89,11.1A105.25,105.25,0,0,0,126.6,80.22h0C129.24,52.84,122.09,29.11,107.7,8.07ZM42.45,65.69C36.18,65.69,31,60,31,53s5-12.74,11.43-12.74S54,46,53.89,53,48.84,65.69,42.45,65.69Zm42.24,0C78.41,65.69,73.25,60,73.25,53s5-12.74,11.44-12.74S96.23,46,96.12,53,91.08,65.69,84.69,65.69Z"/>
+                    </svg>
+                </a>
+                <a href="https://chat.whatsapp.com/LqFzazqYI9K0mExjVemFFT" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Join our WhatsApp">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 175.216 175.552">
+                        <path d="M86.108,0C38.614,0,0,38.614,0,86.108c0,15.08,3.909,29.249,10.767,41.547L3.75,171.552l45.114-7.017c11.743,6.287,25.185,9.867,39.493,9.867c47.494,0,86.108-38.614,86.108-86.108S133.602,0,86.108,0z M140.305,121.444c-1.892,5.324-9.464,9.757-15.502,11.042c-4.152,0.884-9.569,1.594-27.827-5.973c-23.242-9.62-38.165-33.297-39.314-34.829c-1.149-1.532-9.393-12.486-9.393-23.814c0-11.328,5.946-16.905,8.055-19.214c2.109-2.309,4.604-2.888,6.139-2.888c1.535,0,3.07,0.015,4.411,0.081c1.413,0.067,3.313-0.538,5.179,3.946c1.892,4.547,6.462,15.751,7.033,16.905c0.571,1.154,0.952,2.502,0.192,4.034c-0.76,1.532-1.141,2.488-2.29,3.827c-1.149,1.339-2.414,2.992-3.452,4.014c-1.149,1.131-2.345,2.35-1.006,4.599c1.339,2.249,5.946,9.8,12.774,15.873c8.786,7.815,16.196,10.249,18.499,11.403c2.303,1.154,3.642,0.963,4.981-0.578c1.339-1.541,5.751-6.716,7.284-9.025c1.533-2.309,3.067-1.925,5.176-1.156c2.109,0.769,13.436,6.337,15.739,7.491c2.303,1.154,3.835,1.732,4.406,2.694C142.197,113.085,142.197,116.12,140.305,121.444z"/>
+                    </svg>
+                </a>
+            </div>
             </div>
         </div>
     </nav>
 
-    <!-- PAGE HEADER -->
+    <!-- ==================== PAGE HEADER ==================== -->
     <header class="page-header">
         <div class="page-header-content">
             <h1>Resources for Affiliate Marketers</h1>
@@ -638,7 +371,7 @@
         </div>
     </header>
 
-    <!-- SECTION NAVIGATION -->
+    <!-- ==================== SECTION NAVIGATION ==================== -->
     <nav class="section-nav">
         <div class="section-nav-content">
             <a href="#getting-started">Getting Started</a>
@@ -650,6 +383,8 @@
             <a href="#support">Support</a>
         </div>
     </nav>
+
+    <!-- ==================== CONTENT SECTIONS ==================== -->
 
     <!-- ============================================
          SECTION 1: GETTING STARTED
@@ -680,13 +415,8 @@
                 <li><strong>High LTV:</strong> Sticky product with strong retention = more lifetime earnings per customer</li>
             </ul>
 
-            <!-- PLACEHOLDER: Add overview video here -->
-            <div class="media-placeholder">
-                <div class="media-placeholder-icon">🎥</div>
-                <div class="media-placeholder-text">Add Affiliate Marketer Overview Video Here</div>
-                <div class="media-placeholder-subtext">Introduction to the program and conversion strategies</div>
-            </div>
-            <!-- END PLACEHOLDER -->
+            <!-- Section Divider -->
+            <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 2.5rem 0;">
         </div>
 
         <!-- TRACKING LINKS -->
@@ -708,19 +438,16 @@
             </ul>
 
             <h4>Creating Campaign-Specific Links</h4>
-            <!-- PLACEHOLDER: Add tracking tutorial here -->
-            <div class="media-placeholder">
-                <div class="media-placeholder-icon">🔗</div>
-                <div class="media-placeholder-text">Add Tracking Link Tutorial Here</div>
-                <div class="media-placeholder-subtext">Step-by-step guide to creating and managing tracking links</div>
-            </div>
-            <!-- END PLACEHOLDER -->
+            <p class="placeholder-text">
+                In your Rewardful dashboard, you can create custom tracking links for different campaigns (e.g., Facebook Ads, Google Ads, email campaigns). This helps you identify which traffic sources convert best so you can optimize your ad spend.
+            </p>
 
             <div class="btn-group">
                 <a href="https://rewardful.com" class="btn" target="_blank">Access Rewardful Dashboard</a>
-                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary">📄 Tracking Guide (Coming Soon)</a>
             </div>
-            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">Tracking guide is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+
+            <!-- Section Divider -->
+            <hr style="border: none; border-top: 1px solid #e2e8f0; margin: 2.5rem 0;">
         </div>
 
         <!-- QUICK START CHECKLIST -->
@@ -796,8 +523,8 @@
             </div>
             <!-- END PLACEHOLDER -->
 
-            <a href="mailto:Dylan@usebluestone.com" class="btn">📄 Audience Research (Coming Soon)</a>
-            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+            <a href="mailto:dylan@usebluestone.com" class="btn">📄 Audience Research (Coming Soon)</a>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact dylan@usebluestone.com to be notified when available.</p>
         </div>
     </section>
 
@@ -939,7 +666,7 @@ Join thousands who've found their wellness companion.
 
             <p class="placeholder-text"><strong>Keyword Ideas:</strong> ai wellness app, mental health chatbot, sleep tracking app, holistic wellness app, ai life coach, personalized fitness app, wellness companion app, mental health app with ai</p>
 
-            <a href="mailto:Dylan@usebluestone.com" class="btn">Request More Ad Templates</a>
+            <a href="mailto:dylan@usebluestone.com" class="btn">Request More Ad Templates</a>
 
             <h4>Facebook/Instagram Video Ad Script</h4>
             <p class="placeholder-text">Use this proven script for short-form video ads (15-30 seconds):</p>
@@ -1063,8 +790,8 @@ Link in bio."
             </div>
             <!-- END PLACEHOLDER -->
 
-            <a href="mailto:Dylan@usebluestone.com" class="btn">📄 Landing Page Guide (Coming Soon)</a>
-            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+            <a href="mailto:dylan@usebluestone.com" class="btn">📄 Landing Page Guide (Coming Soon)</a>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact dylan@usebluestone.com to be notified when available.</p>
         </div>
 
         <!-- PLATFORM-SPECIFIC STRATEGIES -->
@@ -1125,8 +852,8 @@ Link in bio."
                 <li>Retarget website visitors and video viewers with specific conversion offers</li>
             </ul>
 
-            <a href="mailto:Dylan@usebluestone.com" class="btn">📄 Complete Optimization Guide (Coming Soon)</a>
-            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+            <a href="mailto:dylan@usebluestone.com" class="btn">📄 Complete Optimization Guide (Coming Soon)</a>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact dylan@usebluestone.com to be notified when available.</p>
         </div>
     </section>
 
@@ -1727,7 +1454,7 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
             </div>
 
             <div class="btn-group">
-                <a href="mailto:Dylan@usebluestone.com" class="btn btn-secondary">📄 Download All Templates (Coming Soon)</a>
+                <a href="mailto:dylan@usebluestone.com" class="btn btn-secondary">📄 Download All Templates (Coming Soon)</a>
             </div>
         </div>
 
@@ -1813,8 +1540,8 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
                 <li>Include your affiliate disclosure clearly at the top</li>
             </ul>
 
-            <a href="mailto:Dylan@usebluestone.com" class="btn">📄 SEO Checklist (Coming Soon)</a>
-            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+            <a href="mailto:dylan@usebluestone.com" class="btn">📄 SEO Checklist (Coming Soon)</a>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact dylan@usebluestone.com to be notified when available.</p>
 
             <h4 style="margin-top: 2rem;">Link Building Recommendations</h4>
             <p class="placeholder-text">Build high-quality backlinks to boost your SEO rankings and drive more affiliate traffic:</p>
@@ -2001,13 +1728,70 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
                 Download official Bluestone logos in various formats for use in your marketing campaigns:
             </p>
 
-            <!-- PLACEHOLDER: Display logos here -->
-            <div class="media-placeholder">
-                <div class="media-placeholder-icon">🎨</div>
-                <div class="media-placeholder-text">Add Logo Variations Here</div>
-                <div class="media-placeholder-subtext">Display different logo versions and usage guidelines</div>
+            <!-- Logo Grid -->
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-bottom: 2rem;">
+                <!-- Full Logo with Slogan -->
+                <div style="text-align: center;">
+                    <a href="Bluestone logo and slogan.jpg" download style="display: block; padding: 16px; background: #F8FAFC; border-radius: 8px; transition: all 0.3s ease; text-decoration: none;">
+                        <img src="Bluestone logo and slogan.jpg" alt="Full Logo with Slogan" style="width: 100%; max-width: 250px; height: auto; border-radius: 4px; transition: transform 0.3s ease;">
+                    </a>
+                    <p style="margin-top: 12px; font-size: 14px; font-weight: 500; color: var(--text-dark);">Full Logo with Slogan</p>
+                </div>
+
+                <!-- Logo with Text -->
+                <div style="text-align: center;">
+                    <a href="Gemini_Generated_Image_6tvnc6tvnc6tvnc6.png" download style="display: block; padding: 16px; background: #F8FAFC; border-radius: 8px; transition: all 0.3s ease; text-decoration: none;">
+                        <img src="Gemini_Generated_Image_6tvnc6tvnc6tvnc6.png" alt="Logo with Text" style="width: 100%; max-width: 250px; height: auto; border-radius: 4px; transition: transform 0.3s ease;">
+                    </a>
+                    <p style="margin-top: 12px; font-size: 14px; font-weight: 500; color: var(--text-dark);">Logo with Text</p>
+                </div>
+
+                <!-- Icon - Light Blue -->
+                <div style="text-align: center;">
+                    <a href="light logo.png" download style="display: block; padding: 16px; background: #F8FAFC; border-radius: 8px; transition: all 0.3s ease; text-decoration: none;">
+                        <img src="light logo.png" alt="Icon - Light Blue" style="width: 100%; max-width: 250px; height: auto; border-radius: 4px; transition: transform 0.3s ease;">
+                    </a>
+                    <p style="margin-top: 12px; font-size: 14px; font-weight: 500; color: var(--text-dark);">Icon - Light Blue</p>
+                </div>
+
+                <!-- Icon - Dark Blue (Transparent) -->
+                <div style="text-align: center;">
+                    <a href="logo no backround.png" download style="display: block; padding: 16px; background: #F8FAFC; border-radius: 8px; transition: all 0.3s ease; text-decoration: none;">
+                        <img src="logo no backround.png" alt="Icon - Dark Blue (Transparent)" style="width: 100%; max-width: 250px; height: auto; border-radius: 4px; transition: transform 0.3s ease;">
+                    </a>
+                    <p style="margin-top: 12px; font-size: 14px; font-weight: 500; color: var(--text-dark);">Icon - Dark Blue (Transparent)</p>
+                </div>
+
+                <!-- Icon - Navy Blue -->
+                <div style="text-align: center;">
+                    <a href="logo.png" download style="display: block; padding: 16px; background: #F8FAFC; border-radius: 8px; transition: all 0.3s ease; text-decoration: none;">
+                        <img src="logo.png" alt="Icon - Navy Blue" style="width: 100%; max-width: 250px; height: auto; border-radius: 4px; transition: transform 0.3s ease;">
+                    </a>
+                    <p style="margin-top: 12px; font-size: 14px; font-weight: 500; color: var(--text-dark);">Icon - Navy Blue</p>
+                </div>
             </div>
-            <!-- END PLACEHOLDER -->
+
+            <style>
+                @media (max-width: 968px) {
+                    .media-placeholder + div[style*="grid-template-columns"] {
+                        grid-template-columns: repeat(2, 1fr) !important;
+                    }
+                }
+                @media (max-width: 640px) {
+                    .media-placeholder + div[style*="grid-template-columns"] {
+                        grid-template-columns: 1fr !important;
+                    }
+                }
+                /* Hover effect for logo cards */
+                a[href$=".jpg"]:hover, a[href$=".png"]:hover {
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                    transform: translateY(-2px);
+                }
+                a[href$=".jpg"]:hover img, a[href$=".png"]:hover img {
+                    transform: scale(1.02);
+                }
+            </style>
+            <!-- END Logo Grid -->
 
             <div class="btn-group">
                 <a href="#" class="btn-secondary btn-small">Download PNG Logos</a>
@@ -2024,8 +1808,8 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
             </div>
             <!-- END PLACEHOLDER -->
 
-            <a href="mailto:Dylan@usebluestone.com" class="btn">📄 Brand Style Guide (Coming Soon)</a>
-            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+            <a href="mailto:dylan@usebluestone.com" class="btn">📄 Brand Style Guide (Coming Soon)</a>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact dylan@usebluestone.com to be notified when available.</p>
         </div>
 
         <!-- BANNER ADS (detailed) -->
@@ -2034,7 +1818,7 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
 
             <!-- PLACEHOLDER: Add banner info here -->
             <p class="placeholder-text">
-                Professional banner ads in all standard sizes for display advertising campaigns. Contact Dylan@usebluestone.com for access:
+                Professional banner ads in all standard sizes for display advertising campaigns. Contact dylan@usebluestone.com for access:
             </p>
 
             <!-- PLACEHOLDER: Add banner gallery here -->
@@ -2125,7 +1909,7 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
                 <p>Affiliates driving $5,000+ in monthly sales can request custom banners, landing pages, or creative assets tailored to their campaigns. Contact our affiliate team to discuss your needs.</p>
             </div>
 
-            <a href="mailto:Dylan@usebluestone.com" class="btn">Request Custom Assets</a>
+            <a href="mailto:dylan@usebluestone.com" class="btn">Request Custom Assets</a>
         </div>
     </section>
 
@@ -2176,10 +1960,10 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
             </div>
 
             <div class="btn-group">
-                <a href="mailto:Dylan@usebluestone.com" class="btn">📄 FTC Compliance Guide (Coming Soon)</a>
-                <a href="mailto:Dylan@usebluestone.com" class="btn-secondary">📋 Disclosure Templates (Coming Soon)</a>
+                <a href="mailto:dylan@usebluestone.com" class="btn">📄 FTC Compliance Guide (Coming Soon)</a>
+                <a href="mailto:dylan@usebluestone.com" class="btn-secondary">📋 Disclosure Templates (Coming Soon)</a>
             </div>
-            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">These resources are currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">These resources are currently being developed. Contact dylan@usebluestone.com to be notified when available.</p>
         </div>
 
         <!-- BRAND USAGE RULES -->
@@ -2209,8 +1993,8 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
                 <li>❌ Don't bid on Bluestone branded keywords in paid search without approval</li>
             </ul>
 
-            <a href="mailto:Dylan@usebluestone.com" class="btn">📄 Brand Guidelines (Coming Soon)</a>
-            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact Dylan@usebluestone.com to be notified when available.</p>
+            <a href="mailto:dylan@usebluestone.com" class="btn">📄 Brand Guidelines (Coming Soon)</a>
+            <p style="text-align: center; font-size: 14px; color: var(--text-medium); margin-top: 0.5rem;">This resource is currently being developed. Contact dylan@usebluestone.com to be notified when available.</p>
         </div>
 
         <!-- PROHIBITED TACTICS -->
@@ -2339,34 +2123,34 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
                     <!-- PLACEHOLDER: Update email -->
                     <p><strong>Email:</strong> affiliates@usebluestone.com</p>
                     <p>For questions, custom asset requests, and general inquiries. Response within 24 hours.</p>
-                    <a href="mailto:Dylan@usebluestone.com" class="btn btn-small">Send Email</a>
+                    <a href="mailto:dylan@usebluestone.com" class="btn btn-small">Send Email</a>
                 </div>
 
                 <div class="resource-card">
                     <div class="resource-icon">⚙️</div>
                     <h5>Technical/Tracking Issues</h5>
                     <!-- PLACEHOLDER: Update email -->
-                    <p><strong>Email:</strong> Dylan@usebluestone.com</p>
+                    <p><strong>Email:</strong> dylan@usebluestone.com</p>
                     <p>For problems with tracking, dashboard access, or technical difficulties.</p>
-                    <a href="mailto:Dylan@usebluestone.com" class="btn btn-small">Get Technical Help</a>
+                    <a href="mailto:dylan@usebluestone.com" class="btn btn-small">Get Technical Help</a>
                 </div>
 
                 <div class="resource-card">
                     <div class="resource-icon">💰</div>
                     <h5>Payment Questions</h5>
                     <!-- PLACEHOLDER: Update email -->
-                    <p><strong>Email:</strong> Dylan@usebluestone.com</p>
+                    <p><strong>Email:</strong> dylan@usebluestone.com</p>
                     <p>For questions about commissions, payouts, or payment methods.</p>
-                    <a href="mailto:Dylan@usebluestone.com" class="btn btn-small">Contact Payments</a>
+                    <a href="mailto:dylan@usebluestone.com" class="btn btn-small">Contact Payments</a>
                 </div>
 
                 <div class="resource-card">
                     <div class="resource-icon">🤝</div>
                     <h5>Partnership Opportunities</h5>
                     <!-- PLACEHOLDER: Update email -->
-                    <p><strong>Email:</strong> Dylan@usebluestone.com</p>
+                    <p><strong>Email:</strong> dylan@usebluestone.com</p>
                     <p>For high-volume affiliates interested in custom deals or larger partnerships.</p>
-                    <a href="mailto:Dylan@usebluestone.com" class="btn btn-small">Discuss Partnership</a>
+                    <a href="mailto:dylan@usebluestone.com" class="btn btn-small">Discuss Partnership</a>
                 </div>
             </div>
         </div>
@@ -2468,10 +2252,10 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
             <p>A: No. Do not bid on "Bluestone" or "Bluestone Wellness" in any ad platform. This is strictly prohibited.</p>
 
             <p><strong>Q: Can I create my own landing pages?</strong></p>
-            <p>A: Yes, as long as they comply with FTC regulations and don't make false claims. Pre-approval recommended - contact Dylan@usebluestone.com.</p>
+            <p>A: Yes, as long as they comply with FTC regulations and don't make false claims. Pre-approval recommended - contact dylan@usebluestone.com.</p>
 
             <p><strong>Q: Can I run offers/discounts?</strong></p>
-            <p>A: Custom promo codes coming soon. Contact Dylan@usebluestone.com for special promotions.</p>
+            <p>A: Custom promo codes coming soon. Contact dylan@usebluestone.com for special promotions.</p>
 
             <p><strong>Q: Can I white-label or rebrand?</strong></p>
             <p>A: No. You must promote Bluestone under its official brand name.</p>
@@ -2496,7 +2280,7 @@ P.S. - Seriously, no credit card required. Just try it for a week and see if it 
         </div>
     </section>
 
-    <!-- FOOTER -->
+    <!-- ==================== FOOTER ==================== -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-main">
